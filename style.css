@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #897248;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #aea187;
+}
+
+p{
+    padding-left: 10px;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Roboto", Helvetica, sans-serif;
+    color: black;
+    line-height: 30px;
+
+}
+
+.nav-enlace a{
+    color: #897248;
+    font-weight: bold;
+}
+
+.fondo-nav {
+    background-color: rgb(240, 249, 253);
+}
+
+.barra-nav {
+    font-size: 22px;
+
+}
+
+.barra-item1{
+    padding-left: 2em;
+}
+
+.barra-item{
+    padding-left: 4em;
+}
+
+
+
+.container-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 265px 200px 250px; 
+    height: 100h; 
+    grid-gap: 2px; 
+    grid-template-areas: 
+            "baner baner"
+            "welcome descripcion"
+            "welcome imagen1" ; 
+
+}
+ 
+.baner{
+    grid-area: baner;
+    background-color: rgb(240, 249, 253);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.welcome{
+    grid-area: welcome;
+    background-color: rgb(240, 249, 253);
+
+}
+
+.welcome h2{
+    font-size: 26px;
+    padding-left: 30px;
+    letter-spacing: 10px;
+    font-style: oblique;
+    padding-top: 20px;
+    line-height: 60px;
+}
+
+.descripcion{
+    grid-area: descripcion;
+    background-color: rgb(240, 249, 253);
+
+}
+
+.descripcion h2{
+    font-size: 26px;
+    padding-left: 30px;
+    letter-spacing: 10px;
+    font-style: oblique;
+    padding-top: 20px;
+    line-height: 60px;
+}
+
+.imagen1{
+    grid-area: imagen1;
+    background-color: rgb(240, 249, 253);
+
+}
+
+
+
+
+
+
+.container-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 250px 300px 350px 300px; 
+    height: 168vh; 
+    grid-gap: 2px; 
+    grid-template-areas: 
+            "baner2 baner2 baner2 baner2"
+            "mapa-serv mapa-serv imagen2 imagen2"
+            "suite ma-suite j-suite m-suite"
+            "hogar entrega seguro-vet peluqueria"; 
+
+}
+
+.container-servicios h2{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.baner2{
+    grid-area: baner2;
+    background-color: rgb(240, 249, 253);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.mapa-serv{
+    grid-area: mapa-serv;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mapa-serv p{
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.imagen2{
+    grid-area: imagen2;
+    background-color: rgb(240, 249, 253);
+}
+
+.suite{
+    grid-area: suite;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-left: 20px;
+  
+}
+
+
+.ma-suite{
+    grid-area: ma-suite;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.j-suite{
+    grid-area: j-suite;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-left: 20px; 
+}
+
+.m-suite{
+    grid-area: m-suite;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.hogar{
+    grid-area: hogar;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    border-radius: 200px;
+
+}
+
+.hogar p{
+    line-height: 0px;
+}
+
+.entrega {
+    grid-area: entrega;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    border-radius: 200px;
+}
+
+.entrega p{
+    line-height: 0px;
+}
+
+.seguro-vet{
+    grid-area: seguro-vet;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    border-radius: 200px;
+}
+
+.seguro-vet p{
+    line-height: 0px;
+}
+
+.peluqueria{
+    grid-area: peluqueria;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    border-radius: 200px;
+}
+
+.peluqueria p{
+    line-height: 0px;
+}
+
+
+
+
+
+
+
+.container-habitaciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 220px 280px 60px 300px 60px 300px; 
+    height: 172vh; 
+    grid-gap: 2px;
+    grid-template-areas: 
+            "frase frase frase frase"
+            "descripcion1 descripcion1 imagen3 imagen3"
+            "habitaciones habitaciones habitaciones habitaciones"
+            "zen-suite white-vibes rainy-day happy-day"
+            "actividades actividades actividades actividades"
+            "h-piscina h-montana h-lago h-recreo"; 
+
+}
+
+.frase{
+    grid-area: frase;
+    background-color: rgb(240, 249, 253);
+}
+
+.frase p{
+    text-align: center;
+    font-size: 26px;
+    padding-top: 60px;
+    line-height: 50px;
+
+}
+
+.descripcion1{
+    grid-area: descripcion1;
+    background-color: rgb(240, 249, 253);
+}
+
+.descripcion1 h2{
+    font-size: 26px;
+    padding-top: 30px;
+    line-height: 60px;
+    padding-left: 30px;
+    letter-spacing: 8px;
+}
+
+.imagen3{
+    grid-area: imagen3;
+    background-color: rgb(240, 249, 253);
+}
+
+.habitaciones{
+    grid-area: habitaciones;
+    background-color: rgb(240, 249, 253);
+}
+
+.habitaciones h2{
+    font-size: 26px;
+    line-height: 60px;
+    padding-left: 30px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-style: oblique;
+}
+
+.zen-suite{
+    grid-area: zen-suite;
+    background-color: rgb(240, 249, 253);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.white-vibes{
+    grid-area: white-vibes;
+    background-color: rgb(240, 249, 253);
+    text-align: center;
+    padding-top: 15px;
+}
+
+.rainy-day{
+    grid-area: rainy-day;
+    background-color: rgb(240, 249, 253);
+    text-align: center;
+    padding-top: 25px;
+}
+
+.happy-day{
+    grid-area: happy-day;
+    background-color: rgb(240, 249, 253);
+    text-align: center;
+    padding-top: 30px;
+}
+
+.actividades{
+    grid-area: actividades;
+    background-color: rgb(240, 249, 253);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.actividades h2{
+    font-size: 26px;
+    padding-left: 30px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-style: oblique;
+}
+
+.h-piscina{
+    grid-area: h-piscina;
+    background-color: rgb(240, 249, 253);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.h-montana{
+    grid-area: h-montana;
+    background-color: rgb(240, 249, 253);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.h-lago{
+    grid-area: h-lago;
+    background-color: rgb(240, 249, 253);                                       text-align: center;
+    padding-top: 35px;
+}
+
+.h-recreo{
+    grid-area: h-recreo;
+    background-color: rgb(240, 249, 253);
+    text-align: center;
+    padding-top: 45px;
+}
+
+
+
+
+
+
+.container-galeria {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 50px 300px 50px 300px 50px 300px 50px 300px; 
+    height: 197vh; 
+    grid-gap: 2px;
+    grid-template-areas: 
+            "hotel-title"
+            "hotel"
+            "recreo-title"
+            "recreo"
+            "piscina-title"
+            "piscina"
+            "montana-title" 
+            "montana" ; 
+
+}
+
+.hotel-title{
+    grid-area: hotel-title;
+    background-color: rgb(240, 249, 253);
+
+}
+
+.hotel{
+    grid-area: hotel;
+    background-color: rgb(240, 249, 253);
+
+}
+
+.medida-car{
+    height: 270px;
+    width: auto;
+}
+
+.recreo-title{
+    grid-area: recreo-title;
+    background-color: rgb(240, 249, 253);
+
+}
+
+.recreo{
+    grid-area: recreo;
+    background-color: rgb(240, 249, 253);
+
+}
+
+.piscina-title{
+    grid-area: piscina-title;
+    background-color: rgb(240, 249, 253);
+
+}
+
+.piscina{
+    grid-area: piscina;
+    background-color: rgb(240, 249, 253);
+
+}
+
+.montana-title{
+    grid-area: montana-title;
+    background-color: rgb(240, 249, 253);
+
+}
+
+.montana{
+    grid-area: montana;
+    background-color: rgb(240, 249, 253);
+
+}
+
+.medida-car{
+    height: 270px;
+    width: auto;
+}
+
+
+.container-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 300px 300px 300px 300px; 
+    height: 168vh; 
+    grid-gap: 2px;
+    grid-template-areas: 
+            "imagen4 imagen4 imagen4 imagen4"
+            "nosotros nosotros nosotros nosotros"
+            "contactos contactos imagen5 imagen5"
+            "mapa-contacto mapa-contacto direccion form-contacto" ; 
+
+}
+
+.imagen4{
+    grid-area: imagen4;
+    background-color: rgb(240, 249, 253);
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+.nosotros{
+    grid-area: nosotros;
+    background-color: rgb(240, 249, 253);
+
+}
+
+.nosotros h2{
+    font-size: 26px;
+    padding-left: 30px;
+    letter-spacing: 10px;
+    font-style: oblique;
+    padding-top: 20px;
+    line-height: 60px;
+
+}
+
+.contactos{
+    grid-area: contactos;
+    background-color: rgb(240, 249, 253);
+   
+
+}
+
+.contactos h2{
+    padding-left: 50px;
+    font-size: 26px;
+    letter-spacing: 10px;
+    font-style: oblique;
+    padding-top: 30px;
+    line-height: 60px;
+}
+
+.contactos ul{
+    padding-top: 10px;
+    list-style: none;
+    padding-left: 0rem;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 50px;
+
+}
+
+.imagen5{
+    grid-area: imagen5;
+    background-color: rgb(240, 249, 253);
+
+}
+
+.mapa-contacto{
+    grid-area: mapa-contacto;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.mapa-contacto h2{
+    font-size: 26px;
+    padding-left: 30px;
+    letter-spacing: 10px;
+    font-style: oblique;
+    padding-top: 20px;
+    line-height: 60px;
+}
+
+.direccion{
+    grid-area: direccion;
+    background-color: rgb(240, 249, 253);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.form-contacto{
+    grid-area: form-contacto;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+
+
+.container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 220px ; 
+    height: 33vh; 
+    grid-gap: 2px;
+    background-color: rgb(240, 249, 253);
+    grid-template-areas: 
+            "inf-contact contenido logo" ; 
+
+}
+
+.inf-contact{
+    grid-area: inf-contact;
+    background-color: rgb(240, 249, 253);
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+
+}
+
+.contenido{
+    grid-area: contenido;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+
+
+.contenido h1{
+    font-size: 20px;
+}
+
+.contenido ul{
+    list-style: none;
+}
+
+.logo{
+    grid-area: logo;
+    background-color: rgb(240, 249, 253);
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+
+
+
