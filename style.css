@@ -6,398 +6,395 @@
     box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-    color: #897248;
-    font-weight: bold;
-}
-
-a:hover{
-    color: #aea187;
-}
-
-p{
-    padding-left: 10px;
-}
-
 body {
     font-size: 14px;
     font-family: "Roboto", Helvetica, sans-serif;
     color: black;
-    line-height: 30px;
+    line-height: 27px;
 
 }
 
-.nav-enlace a{
-    color: #897248;
+a{
+    text-decoration: none;
+    color: #99713C;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.fondo-nav {
-    background-color: rgb(240, 249, 253);
+a:visited {
+    color: #99713C;
 }
 
-.barra-nav {
-    font-size: 22px;
+a:hover {
+    color: #76572d;
+    background-color: rgba(198, 184, 170, 0.4);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+input:focus {
+    background-color: #F2F2F2;
+}
+
+
+
+h2 {
+    line-height: 50px;
+    margin-left: 20px;
 
 }
 
-.barra-item1{
-    padding-left: 2em;
+p {
+    margin-left: 10px;
+    margin-top: 10px;
+
 }
 
-.barra-item{
-    padding-left: 4em;
+b {
+    font-size: 18px;
 }
 
-
-
-.container-index {
+.container-header {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 150px; 
+    grid-template-areas: 
+             "introduccion barra barra";   
+}
+
+.header ul {
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.introduccion{
+    background-color: #E6F4FC;
+    grid-area: introduccion;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    
+}
+
+.barra{
+    background-color: #E6F4FC;
+    grid-area: barra;
+}
+
+
+
+.container {
+    display: grid;
+    grid-auto-rows: 300 px;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 265px 200px 250px; 
-    height: 100h; 
+    height: 102vh; 
     grid-gap: 2px; 
     grid-template-areas: 
             "baner baner"
-            "welcome descripcion"
-            "welcome imagen1" ; 
-
+            "a b"
+            "a c" ;                                                                 
 }
- 
-.baner{
+
+
+.inicio {
+    background-color: rgb(240, 249, 253);
     grid-area: baner;
-    background-color: rgb(240, 249, 253);
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
+    
+       
 }
 
-.welcome{
-    grid-area: welcome;
+.bienvenida {
     background-color: rgb(240, 249, 253);
-
+    grid-area: a;
+       
 }
 
-.welcome h2{
+.bienvenida h2 {
+    letter-spacing: 5px;
+    font-style: italic;
     font-size: 26px;
-    padding-left: 30px;
-    letter-spacing: 10px;
-    font-style: oblique;
-    padding-top: 20px;
+    font-weight: 500;
     line-height: 60px;
 }
 
-.descripcion{
-    grid-area: descripcion;
+.descripcion {
     background-color: rgb(240, 249, 253);
-
+    grid-area: b;
+           
 }
 
-.descripcion h2{
+.descripcion h2 {
+    letter-spacing: 5px;
+    font-style: italic;
     font-size: 26px;
-    padding-left: 30px;
-    letter-spacing: 10px;
-    font-style: oblique;
-    padding-top: 20px;
-    line-height: 60px;
+    font-weight: 500;
 }
 
-.imagen1{
-    grid-area: imagen1;
+
+.imagen {
     background-color: rgb(240, 249, 253);
-
+    grid-area: c;
+           
 }
-
-
-
 
 
 
 .container-servicios {
     display: grid;
+    grid-auto-rows: 100 px;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 250px 300px 350px 300px; 
-    height: 168vh; 
+    grid-template-rows: 200px 300px 325px 330px ; 
+    height: 165vh; 
     grid-gap: 2px; 
     grid-template-areas: 
-            "baner2 baner2 baner2 baner2"
-            "mapa-serv mapa-serv imagen2 imagen2"
-            "suite ma-suite j-suite m-suite"
-            "hogar entrega seguro-vet peluqueria"; 
-
+            "foto foto foto foto"
+            "mapa mapa perrito perrito"
+            "suite j-suite m-suite ma-suite"
+            "hogar entrega seguro pelu" ;   
 }
 
-.container-servicios h2{
-    font-size: 18px;
-    font-weight: bold;
-
-}
-
-.baner2{
-    grid-area: baner2;
+.banner {
     background-color: rgb(240, 249, 253);
-    text-align: center;
+    grid-area: foto;
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
+    
+    
 }
 
-.mapa-serv{
-    grid-area: mapa-serv;
+.mapa {
     background-color: rgb(240, 249, 253);
+    grid-area: mapa;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 3px;
+
+    
 }
 
-.mapa-serv p{
-    font-size: 18px;
-    letter-spacing: 5px;
-}
-
-.imagen2{
-    grid-area: imagen2;
+.perrito {
     background-color: rgb(240, 249, 253);
+    grid-area: perrito;
+    display: flex;
+    
 }
 
-.suite{
+.suite {
+    background-color: rgb(240, 249, 253);
     grid-area: suite;
-    background-color: rgb(240, 249, 253);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     text-align: center;
-    padding-left: 20px;
-  
+    padding-top: 10px;
+    
 }
 
-
-.ma-suite{
-    grid-area: ma-suite;
+.jsuite {
     background-color: rgb(240, 249, 253);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    padding-left: 20px;
-}
-
-.j-suite{
     grid-area: j-suite;
-    background-color: rgb(240, 249, 253);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     text-align: center;
-    padding-left: 20px; 
+    padding-top: 10px;
+
+    
 }
 
-.m-suite{
+.msuite {
+    background-color: rgb(240, 249, 253);
     grid-area: m-suite;
-    background-color: rgb(240, 249, 253);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     text-align: center;
-    padding-left: 20px;
+    padding-top: 10px;
+
 }
 
-.hogar{
-    grid-area: hogar;
+.masuite {
     background-color: rgb(240, 249, 253);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 20px;
-    border-radius: 200px;
+    grid-area: ma-suite;
+    text-align: center;
+    padding-top: 10px;
 
 }
 
-.hogar p{
-    line-height: 0px;
+.hogar {
+    background-color: rgb(240, 249, 253);
+    border-radius: 100%;
+    grid-area: hogar;
+    text-align: center;
+    padding-top: 10px;
+ 
+
 }
 
 .entrega {
+    background-color: rgb(240, 249, 253);
+    border-radius: 100%;
     grid-area: entrega;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.veterinario{
     background-color: rgb(240, 249, 253);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 20px;
-    border-radius: 200px;
+    border-radius: 100%;
+    grid-area: seguro;
+    text-align: center;
+    padding-top: 30px;
+    
 }
 
-.entrega p{
-    line-height: 0px;
-}
-
-.seguro-vet{
-    grid-area: seguro-vet;
+.pelu{
     background-color: rgb(240, 249, 253);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 20px;
-    border-radius: 200px;
+    border-radius: 100%;
+    grid-area: pelu;
+    text-align: center;
+    padding-top: 30px;
+    
 }
-
-.seguro-vet p{
-    line-height: 0px;
-}
-
-.peluqueria{
-    grid-area: peluqueria;
-    background-color: rgb(240, 249, 253);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 10px;
-    border-radius: 200px;
-}
-
-.peluqueria p{
-    line-height: 0px;
-}
-
-
-
-
-
 
 
 .container-habitaciones {
     display: grid;
+    grid-auto-rows: 100 px;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 220px 280px 60px 300px 60px 300px; 
-    height: 172vh; 
-    grid-gap: 2px;
+    grid-template-rows: 180px 200px 50px 350px 50px 350px ; 
+    height: 170vh; 
+    grid-gap: 2px; 
     grid-template-areas: 
             "frase frase frase frase"
-            "descripcion1 descripcion1 imagen3 imagen3"
+            "hotel hotel image image"
             "habitaciones habitaciones habitaciones habitaciones"
-            "zen-suite white-vibes rainy-day happy-day"
+            "hab1 hab2 hab3 hab4"
             "actividades actividades actividades actividades"
-            "h-piscina h-montana h-lago h-recreo"; 
-
+            "act1 act2 act3 act4" ;   
 }
 
 .frase{
+    background-color: rgb(240, 249, 253);
     grid-area: frase;
-    background-color: rgb(240, 249, 253);
-}
-
-.frase p{
     text-align: center;
-    font-size: 26px;
-    padding-top: 60px;
-    line-height: 50px;
-
-}
-
-.descripcion1{
-    grid-area: descripcion1;
-    background-color: rgb(240, 249, 253);
-}
-
-.descripcion1 h2{
-    font-size: 26px;
-    padding-top: 30px;
-    line-height: 60px;
-    padding-left: 30px;
-    letter-spacing: 8px;
-}
-
-.imagen3{
-    grid-area: imagen3;
-    background-color: rgb(240, 249, 253);
-}
-
-.habitaciones{
-    grid-area: habitaciones;
-    background-color: rgb(240, 249, 253);
-}
-
-.habitaciones h2{
-    font-size: 26px;
-    line-height: 60px;
-    padding-left: 30px;
-    letter-spacing: 10px;
-    text-align: center;
+    padding-top: 40px;
+    line-height: 40px;
     font-style: oblique;
+    font-size: 14px;
 }
 
-.zen-suite{
-    grid-area: zen-suite;
+.hotel{
     background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 10px;
+    grid-area: hotel;
+    
 }
 
-.white-vibes{
-    grid-area: white-vibes;
-    background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 15px;
+.hotel h2 {
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 500;
 }
 
-.rainy-day{
-    grid-area: rainy-day;
+.image{
     background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 25px;
+    grid-area: image;
+    
 }
 
-.happy-day{
-    grid-area: happy-day;
+.habitaciones {
     background-color: rgb(240, 249, 253);
+    grid-area: habitaciones;
+    
+}
+
+.habitaciones h2 {
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 500;
     text-align: center;
-    padding-top: 30px;
+   
+}
+
+.hab1{
+    background-color: rgb(240, 249, 253);
+    grid-area: hab1;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.hab2{
+    background-color: rgb(240, 249, 253);
+    grid-area: hab2;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.hab3{
+    background-color: rgb(240, 249, 253);
+    grid-area: hab3;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.hab4{
+    background-color: rgb(240, 249, 253);
+    grid-area: hab4;
+    text-align: center;
+    padding-top: 20px;
+    
 }
 
 .actividades{
+    background-color: rgb(240, 249, 253);
     grid-area: actividades;
-    background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 10px;
+    
 }
 
-.actividades h2{
+.actividades h2 {
+    letter-spacing: 5px;
+    font-style: italic;
     font-size: 26px;
-    padding-left: 30px;
-    letter-spacing: 10px;
+    font-weight: 500;
     text-align: center;
-    font-style: oblique;
 }
 
-.h-piscina{
-    grid-area: h-piscina;
+.act1{
     background-color: rgb(240, 249, 253);
+    grid-area: act1;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.act2{
+    background-color: rgb(240, 249, 253);
+    grid-area: act2;
     text-align: center;
     padding-top: 20px;
 }
 
-.h-montana{
-    grid-area: h-montana;
+.act3{
     background-color: rgb(240, 249, 253);
+    grid-area: act3;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
-.h-lago{
-    grid-area: h-lago;
-    background-color: rgb(240, 249, 253);                                       text-align: center;
-    padding-top: 35px;
-}
-
-.h-recreo{
-    grid-area: h-recreo;
+.act4{
     background-color: rgb(240, 249, 253);
+    grid-area: act4;
     text-align: center;
-    padding-top: 45px;
+    padding-top: 20px;
 }
-
 
 
 
@@ -405,233 +402,356 @@ body {
 
 .container-galeria {
     display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: 50px 300px 50px 300px 50px 300px 50px 300px; 
-    height: 197vh; 
-    grid-gap: 2px;
-    grid-template-areas: 
-            "hotel-title"
-            "hotel"
-            "recreo-title"
-            "recreo"
-            "piscina-title"
-            "piscina"
-            "montana-title" 
-            "montana" ; 
-
+    grid-auto-rows: 250px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 50px 250px 50px 250px 50px 250px 50px 250px; 
+    height: 176vh; 
+    grid-gap: 5px; 
+    grid-template-areas:
+            "hotelperros hotelperros hotelperros hotelperros" 
+            "hotel1 hotel2 hotel3 hotel4" 
+            "recreo recreo recreo recreo" 
+            "recreo1 recreo2 recreo3 recreo4"
+            "piscina piscina piscina piscina" 
+            "piscina1 piscina2 piscina3 piscina4"
+            "montana montana montana montana" 
+            "montana1 montana2 montana3 montana4"
+             ;   
 }
 
-.hotel-title{
-    grid-area: hotel-title;
+.hotelperros {
     background-color: rgb(240, 249, 253);
-
+    grid-area: hotelperros;
+    
+}
+.hotelperros h2 {
+    letter-spacing: 2px;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
 }
 
-.hotel{
-    grid-area: hotel;
+.hotel1 {
     background-color: rgb(240, 249, 253);
-
+    grid-area: hotel1;
+    padding-top: 20px;
+    padding-left: 30px;
+    
 }
 
-.medida-car{
-    height: 270px;
-    width: auto;
-}
-
-.recreo-title{
-    grid-area: recreo-title;
+.hotel2 {
     background-color: rgb(240, 249, 253);
-
+    grid-area: hotel2;
+    padding-top: 20px;
+    padding-left: 60px;
 }
 
-.recreo{
+.hotel3 {
+    background-color: rgb(240, 249, 253);
+    grid-area: hotel3;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+.hotel4 {
+    background-color: rgb(240, 249, 253);
+    grid-area: hotel4;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+.recreo {
+    background-color: rgb(240, 249, 253);
     grid-area: recreo;
-    background-color: rgb(240, 249, 253);
-
+    
+    
 }
 
-.piscina-title{
-    grid-area: piscina-title;
-    background-color: rgb(240, 249, 253);
-
+.recreo h2 {
+    letter-spacing: 2px;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
 }
 
-.piscina{
+.recreo1 {
+    background-color: rgb(240, 249, 253);
+    grid-area: recreo1;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+.recreo2 {
+    background-color: rgb(240, 249, 253);
+    grid-area: recreo2;
+    padding-top: 20px;
+    padding-left: 110px;
+    
+}
+
+.recreo3 {
+    background-color: rgb(240, 249, 253);
+    grid-area: recreo3;
+    padding-top: 20px;
+    padding-left: 70px;
+    
+}
+
+.recreo4 {
+    background-color: rgb(240, 249, 253);
+    grid-area: recreo4;
+    padding-top: 20px;
+    padding-left: 60px;
+    
+}
+
+.piscina {
+    background-color: rgb(240, 249, 253);
     grid-area: piscina;
-    background-color: rgb(240, 249, 253);
-
+    
 }
 
-.montana-title{
-    grid-area: montana-title;
-    background-color: rgb(240, 249, 253);
-
+.piscina h2 {
+    letter-spacing: 2px;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
 }
 
-.montana{
+.piscina1 {
+    background-color: rgb(240, 249, 253);
+    grid-area: piscina1;
+    padding-top: 20px;
+    padding-left: 60px;
+    
+}
+
+.piscina2 {
+    background-color: rgb(240, 249, 253);
+    grid-area: piscina2;
+    padding-top: 20px;
+    padding-left: 60px;
+    
+}
+
+.piscina3 {
+    background-color: rgb(240, 249, 253);
+    grid-area: piscina3;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+.piscina4 {
+    background-color: rgb(240, 249, 253);
+    grid-area: piscina4;
+    padding-top: 20px;
+    padding-left: 60px;
+    
+}
+
+.montana {
+    background-color: rgb(240, 249, 253);
     grid-area: montana;
-    background-color: rgb(240, 249, 253);
-
+    
 }
 
-.medida-car{
-    height: 270px;
-    width: auto;
+.montana h2 {
+    letter-spacing: 2px;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.montana1 {
+    background-color: rgb(240, 249, 253);
+    grid-area: montana1;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+
+.montana2 {
+    background-color: rgb(240, 249, 253);
+    grid-area: montana2;
+    padding-top: 20px;
+    padding-left: 60px;
+    
+}
+
+.montana3 {
+    background-color: rgb(240, 249, 253);
+    grid-area: montana3;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+.montana4 {
+    background-color: rgb(240, 249, 253);
+    grid-area: montana4;
+    padding-top: 20px;
+    padding-left: 110px;
+    
 }
 
 
 .container-contacto {
     display: grid;
+    grid-auto-rows: 100 px;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 300px 300px 300px 300px; 
-    height: 168vh; 
-    grid-gap: 2px;
-    grid-template-areas: 
-            "imagen4 imagen4 imagen4 imagen4"
+    grid-template-rows: 200px 250px 200px 260px; 
+    height: 132vh; 
+    grid-gap: 5px; 
+    grid-template-areas:
+            "gif gif gif gif" 
             "nosotros nosotros nosotros nosotros"
-            "contactos contactos imagen5 imagen5"
-            "mapa-contacto mapa-contacto direccion form-contacto" ; 
-
+            "contacta contacta imagen2 imagen2"
+            "mapacon mapacon direccion form-contacto"
+             ;   
 }
 
-.imagen4{
-    grid-area: imagen4;
+.gif {
     background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 40px;
-
-}
-
-.nosotros{
-    grid-area: nosotros;
-    background-color: rgb(240, 249, 253);
-
-}
-
-.nosotros h2{
-    font-size: 26px;
-    padding-left: 30px;
-    letter-spacing: 10px;
-    font-style: oblique;
-    padding-top: 20px;
-    line-height: 60px;
-
-}
-
-.contactos{
-    grid-area: contactos;
-    background-color: rgb(240, 249, 253);
-   
-
-}
-
-.contactos h2{
-    padding-left: 50px;
-    font-size: 26px;
-    letter-spacing: 10px;
-    font-style: oblique;
-    padding-top: 30px;
-    line-height: 60px;
-}
-
-.contactos ul{
-    padding-top: 10px;
-    list-style: none;
-    padding-left: 0rem;
-    display: flex;
-    justify-content: space-evenly;
-    line-height: 50px;
-
-}
-
-.imagen5{
-    grid-area: imagen5;
-    background-color: rgb(240, 249, 253);
-
-}
-
-.mapa-contacto{
-    grid-area: mapa-contacto;
-    background-color: rgb(240, 249, 253);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-.mapa-contacto h2{
-    font-size: 26px;
-    padding-left: 30px;
-    letter-spacing: 10px;
-    font-style: oblique;
-    padding-top: 20px;
-    line-height: 60px;
-}
-
-.direccion{
-    grid-area: direccion;
-    background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 50px;
-}
-
-.form-contacto{
-    grid-area: form-contacto;
-    background-color: rgb(240, 249, 253);
+    grid-area: gif;
     display: flex;
     justify-content: center;
     padding-top: 30px;
+    
+}
+
+.nosotros {
+    background-color: rgb(240, 249, 253);
+    grid-area: nosotros;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+
+.nosotros h2 {
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.contacta {
+    background-color: rgb(240, 249, 253);
+    grid-area: contacta;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.contacta ul {
+    list-style: none;
+}
+
+
+.contacta h2 {
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+.imagen2 {
+    background-color: rgb(240, 249, 253);
+    grid-area: imagen2;
+    
+}
+
+.mapacon {
+    background-color: rgb(240, 249, 253);
+    grid-area: mapacon;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.mapacon h2 {
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+
+.direccion {
+    background-color: rgb(240, 249, 253);
+    grid-area: direccion;
+    text-align: center;
+    padding-top: 40px;
+    line-height: 25px;
+    
+}
+
+.form-contacto {
+    background-color: rgb(240, 249, 253);
+    grid-area: form-contacto;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;    
 }
 
 
 
 .container-footer {
     display: grid;
+    grid-auto-rows: 300 px;
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 220px ; 
-    height: 33vh; 
-    grid-gap: 2px;
-    background-color: rgb(240, 249, 253);
+    grid-template-rows: 180px; 
+    height: 25vh; 
+    grid-gap: 2px; 
     grid-template-areas: 
-            "inf-contact contenido logo" ; 
+            "contacto colaborar logo"
+            ; 
+                                                               
 
 }
 
-.inf-contact{
-    grid-area: inf-contact;
-    background-color: rgb(240, 249, 253);
-    display:flex;
-    justify-content: space-evenly;
-    padding-top: 30px;
 
-}
 
-.contenido{
-    grid-area: contenido;
-    background-color: rgb(240, 249, 253);
+.contacto {
+    background-color: #E6F4FC;  
+    grid-area: contacto;
     display: flex;
-    justify-content: center;
-    padding-top: 30px;
-
+    justify-content: space-evenly;
+    padding-left: px;
+    text-align: center;
+    padding-top: 40px;
+    line-height: 11px;
 }
 
 
-.contenido h1{
-    font-size: 20px;
-}
 
-.contenido ul{
-    list-style: none;
+.colaborador{
+    background-color: #E6F4FC;
+    grid-area: colaborar;
+    display:flex;
+    justify-content: space-around;
+    padding-top: 50px;
+
 }
 
 .logo{
+    background-color: #E6F4FC;   
     grid-area: logo;
-    background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
-
 
 
 
