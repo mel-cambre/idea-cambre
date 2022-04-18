@@ -91,7 +91,7 @@ b {
     grid-auto-rows: 300 px;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 265px 200px 250px; 
-    height: 102vh; 
+    height: auto; 
     grid-gap: 2px; 
     grid-template-areas: 
             "baner baner"
@@ -141,6 +141,9 @@ b {
 .imagen {
     background-color: rgb(240, 249, 253);
     grid-area: c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
            
 }
 
@@ -151,7 +154,7 @@ b {
     grid-auto-rows: 100 px;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: 200px 300px 325px 330px ; 
-    height: 165vh; 
+    height: auto; 
     grid-gap: 2px; 
     grid-template-areas: 
             "foto foto foto foto"
@@ -187,6 +190,8 @@ b {
     background-color: rgb(240, 249, 253);
     grid-area: perrito;
     display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -229,6 +234,10 @@ b {
     grid-area: hogar;
     text-align: center;
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
  
 
 }
@@ -239,6 +248,10 @@ b {
     grid-area: entrega;
     text-align: center;
     padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -248,6 +261,10 @@ b {
     grid-area: seguro;
     text-align: center;
     padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -257,6 +274,10 @@ b {
     grid-area: pelu;
     text-align: center;
     padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -266,7 +287,7 @@ b {
     grid-auto-rows: 100 px;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: 180px 200px 50px 350px 50px 350px ; 
-    height: 170vh; 
+    height: auto; 
     grid-gap: 2px; 
     grid-template-areas: 
             "frase frase frase frase"
@@ -303,6 +324,9 @@ b {
 .image{
     background-color: rgb(240, 249, 253);
     grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -405,7 +429,7 @@ b {
     grid-auto-rows: 250px;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: 50px 250px 50px 250px 50px 250px 50px 250px; 
-    height: 176vh; 
+    height: auto; 
     grid-gap: 5px; 
     grid-template-areas:
             "hotelperros hotelperros hotelperros hotelperros" 
@@ -607,7 +631,7 @@ b {
     grid-auto-rows: 100 px;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: 200px 250px 200px 260px; 
-    height: 132vh; 
+    height: auto; 
     grid-gap: 5px; 
     grid-template-areas:
             "gif gif gif gif" 
@@ -666,6 +690,9 @@ b {
 .imagen2 {
     background-color: rgb(240, 249, 253);
     grid-area: imagen2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
