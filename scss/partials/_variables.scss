@@ -1,0 +1,26 @@
+$color-fondo: rgb(240, 249, 253);
+
+
+%card {
+	background-color: white;
+    box-shadow: 5px 5px 10px grey;
+    border: 1px solid;
+    display: flex;
+}
+
+%tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #D0D0D0;
+    text-align: center;
+}
+
+%actividades {
+    background-color: white;
+    border: 1px solid #D0D0D0;
+    display: flex;
+    justify-content: center;
+}
