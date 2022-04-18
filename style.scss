@@ -1,0 +1,956 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+
+%card {
+	background-color: white;
+    box-shadow: 5px 5px 10px grey;
+    border: 1px solid;
+    display: flex;
+}
+
+%tarjeta {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #D0D0D0;
+    text-align: center;
+}
+
+%actividades {
+    background-color: white;
+    border: 1px solid #D0D0D0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #897248;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #aea187;
+}
+
+p{
+    padding-left: 10px;
+}
+
+h1{
+    padding-left: 2rem;
+    font-size: 25px;
+    letter-spacing: 0.3rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+h4 {
+    color: grey;
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 1rem;
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 20px;
+    padding-left: 0rem;
+    letter-spacing: 0rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+
+body {
+    font-size: 14px;
+    font-family: "Roboto", Helvetica, sans-serif;
+    color: black;
+    line-height: 30px;
+
+}
+
+
+.nav-enlace a{
+    color: #897248;
+    font-weight: bold;
+}
+
+.fondo-nav {
+    background-color: rgb(240, 249, 253);
+}
+
+.barra-nav {
+    font-size: 22px;
+
+}
+
+.medida {
+    width: 40rem;
+
+    @media screen and (max-width: 950px) {
+
+        width: 25rem;
+     
+     }
+}
+
+
+
+
+.barra-item{
+    padding-left: 4em;
+
+    @media screen and (max-width: 1320px) {
+
+       padding-left: 1.5em;
+    
+    }
+}
+
+.index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+    "baner baner"
+    "presentacion descripcion"
+    "unicos imagen";
+
+    @media screen and (max-width: 950px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        "baner"
+        "presentacion"
+        "descripcion"
+        "unicos"
+        "imagen";
+        
+    }
+
+    &__baner {
+        grid-area: baner;
+        grid-row: 1;
+        grid-column: 1 2;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 1;
+            grid-column: 1;
+        }
+    
+    }
+
+    &__presentacion {
+        grid-area: presentacion;
+        grid-row: 2;
+        grid-column: 1;
+        background-color: rgb(240, 249, 253);
+        padding-top: 1rem;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 2;
+            grid-column: 1;
+        }
+    
+    
+    }
+
+    &__descripcion {
+        grid-area: descripcion;
+        grid-row: 2;
+        grid-column: 2;
+        background-color: rgb(240, 249, 253);
+        padding-top: 1rem;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 3;
+            grid-column: 1;
+        }
+    
+    }
+
+    &__imagen {
+        grid-area: imagen;
+        grid-row: 3;
+        grid-column: 2;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 4;
+            grid-column: 1;
+        }
+    
+    }
+
+    &__unicos {
+        grid-area: unicos;
+        grid-row: 3;
+        grid-column: 1;
+        background-color: rgb(240, 249, 253);
+        padding-top: 1rem;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 5;
+            grid-column: 1;
+        }
+    }
+}
+
+
+.servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+    "gif gif gif gif"
+    "suite suite ma-suite ma-suite"
+    "j-suite j-suite m-suite m-suite"
+    "hogar entrega seguro peluqueria"
+    "mapa mapa mapa imagen";
+
+    @media screen and (max-width: 950px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "gif gif"
+        "suite suite"
+        "ma-suite ma-suite"
+        "j-suite j-suite"
+        "m-suite m-suite"
+        "hogar entrega"
+        "seguro peluqueria" 
+        "mapa mapa" 
+        "imagen imagen";
+    }
+
+    &__gif {
+        grid-area: gif;
+        grid-row: 1;
+        grid-column: 1 2 3 4;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 1;
+            grid-column: 1 2;
+        }
+    }
+
+    &__suite {
+        grid-area: suite;
+        grid-row: 2;
+        grid-column: 1 2;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 2;
+            grid-column: 1 2;
+        }
+
+        @extend %card
+   
+    }
+
+    &__master {
+        grid-area: ma-suite;
+        grid-row: 2;
+        grid-column: 3 4;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 3;
+            grid-column: 1 2;
+        }
+
+        @extend %card
+    }
+
+    &__junior {
+        grid-area: j-suite;
+        grid-row: 3;
+        grid-column: 1 2;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 4;
+            grid-column: 1 2;
+        }
+
+        @extend %card
+    }
+
+    &__mini {
+        grid-area: m-suite;
+        grid-row: 3;
+        grid-column: 3 4;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 5;
+            grid-column: 1 2;
+        }
+
+        @extend %card
+    }
+
+    &__hogar {
+        grid-area: hogar;
+        grid-row: 4;
+        grid-column: 1;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 6;
+            grid-column: 1;
+        }
+
+        @extend %tarjeta
+        
+    }
+
+    &__entrega {
+        grid-area: entrega;
+        grid-row: 4;
+        grid-column: 2;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 6;
+            grid-column: 2;
+        }
+
+        @extend %tarjeta
+    }
+    
+    &__seguro {
+        grid-area: seguro;
+        grid-row: 4;
+        grid-column: 3;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 7;
+            grid-column: 1;
+        }
+
+        @extend %tarjeta
+    }
+    
+    &__peluqueria {
+        grid-area: peluqueria;
+        grid-row: 4;
+        grid-column: 4;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 7;
+            grid-column: 2;
+        }
+
+        @extend %tarjeta
+    }
+    
+    &__mapa {
+        grid-area: mapa;
+        grid-row: 5;
+        grid-column: 1 2 3;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 8;
+            grid-column: 1 2;
+        }
+    }
+    
+    &__imagen {
+        grid-area: imagen;
+        grid-row: 5;
+        grid-column: 4;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 9;
+            grid-column: 1 2;
+        }
+
+    }
+}
+
+.habitaciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+    "frase frase frase frase"
+    "descripcion descripcion descripcion imagen"
+    "zen-suite zen-suite white-vibes white-vibes"
+    "happy-day happy-day rainy-day rainy-day"
+    "actividades actividades actividades actividades"
+    "piscina piscina montana montana"
+    "lago lago recreo recreo";
+
+
+    @media screen and (max-width: 950px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "frase"
+        "descripcion"
+        "imagen"
+        "zen-suite"
+        "white-vibes"
+        "happy-day"
+        "rainy-day"
+        "actividades"
+        "piscina"
+        "montana" 
+        "lago" 
+        "recreo";
+    }
+
+    &__frase {
+        grid-area: frase;
+        grid-row: 1;
+        grid-column: 1 2 3 4;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+            font-size: 22px;
+            letter-spacing: 0rem;
+        }    
+
+        @media screen and (max-width: 950px) {
+            grid-row: 1;
+            grid-column: 1;
+        }
+        
+    }
+    
+    
+    &__descripcion {
+        grid-area: descripcion;
+        grid-row: 2;
+        grid-column: 1 2 3;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 2;
+            grid-column: 1;
+        }
+       
+        
+    }
+    
+    &__imagen {
+        grid-area: imagen;
+        grid-row: 2;
+        grid-column: 4;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 3;
+            grid-column: 1;
+        }
+        
+    }
+
+    &__zen {
+        grid-area: zen-suite;
+        grid-row: 3;
+        grid-column: 1 2;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 4;
+            grid-column: 1;
+        }
+
+        @extend %card
+        
+    }
+    
+    &__white {
+        grid-area: white-vibes;
+        grid-row: 3;
+        grid-column: 3 4;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 5;
+            grid-column: 1;
+        }
+
+        @extend %card
+        
+    }
+    
+    
+    &__happy {
+        grid-area: happy-day;
+        grid-row: 4;
+        grid-column: 1 2;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 6;
+            grid-column: 1;
+        }
+
+        @extend %card
+        
+    }
+
+    &__rainy {
+        grid-area: rainy-day;
+        grid-row: 4;
+        grid-column: 3 4;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 7;
+            grid-column: 1;
+        }
+
+        @extend %card
+        
+    }
+
+    &__titulo {
+        grid-area: actividades;
+        grid-row: 5;
+        grid-column: 1 2 3 4;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 8;
+            grid-column: 1;
+        }
+        
+    }
+    
+    &__piscina {
+        grid-area: piscina;
+        grid-row: 6;
+        grid-column: 1 2;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 9;
+            grid-column: 1;
+        }
+
+        @extend %actividades
+        
+    }
+    
+    &__montana {
+        grid-area: montana;
+        grid-row: 6;
+        grid-column: 3 4;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 10;
+            grid-column: 1;
+        }
+
+        @extend %actividades
+        
+    }
+    
+    &__lago {
+        grid-area: lago;
+        grid-row: 7;
+        grid-column: 1 2;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 11;
+            grid-column: 1;
+        }
+
+        @extend %actividades
+        
+    }
+    
+    &__recreo {
+        grid-area: recreo;
+        grid-row: 7;
+        grid-column: 3 4;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 12;
+            grid-column: 1;
+        }
+
+        @extend %actividades
+        
+    }
+
+}
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+    "hotel-title"
+    "hotel"
+    "recreo-title"
+    "recreo"
+    "piscina-title"
+    "piscina"
+    "montana-title"
+    "montana";
+
+    &__title1 {
+        grid-area: hotel-title;
+        grid-row: 1;
+        grid-column: 1;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    &__hotel {
+        grid-area: hotel;
+        grid-row: 2;
+        grid-column: 1;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    
+    }
+    
+    &__title2 {
+        grid-area: recreo-title;
+        grid-row: 3;
+        grid-column: 1;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    
+    &__recreo {
+        grid-area: recreo;
+        grid-row: 4;
+        grid-column: 1;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    
+    &__title3 {
+        grid-area: piscina-title;
+        grid-row: 5;
+        grid-column: 1;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    
+    }
+    
+    &__piscina {
+        grid-area: piscina;
+        grid-row: 6;
+        grid-column: 1;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    &__title4 {
+        grid-area: montana-title;
+        grid-row: 7;
+        grid-column: 1;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    
+    }
+    
+    &__montana {
+        grid-area: montana;
+        grid-row: 8;
+        grid-column: 1;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    
+}
+
+
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+    "gif-casa gif-casa gif-casa gif-casa"
+    "nosotros nosotros nosotros nosotros"
+    "contactos contactos contactos imagen"
+    "mapa mapa direccion formulario";
+
+    @media screen and (max-width: 950px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "gif-casa"
+        "nosotros"
+        "contactos"
+        "imagen"
+        "mapa" 
+        "direccion"
+        "formulario";
+    }
+
+
+
+
+    &__gif {
+        grid-area: gif-casa;
+        grid-row: 1;
+        grid-column: 1 2 3 4;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 1;
+            grid-column: 1;
+        }
+    
+    }
+    
+    &__nosotros {
+        grid-area: nosotros;
+        grid-row: 2;
+        grid-column: 1 2 3 4;
+        background-color: rgb(240, 249, 253);
+
+        @media screen and (max-width: 950px) {
+            grid-row: 2;
+            grid-column: 1;
+        }
+    
+    }
+    
+    &__contactos {
+        grid-area: contactos;
+        grid-row: 4;
+        grid-column: 1 2 3;
+        background-color: rgb(240, 249, 253);
+
+        .orden {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        
+        }
+
+        ul{
+            list-style: none;
+            line-height: 60px;
+         
+         }
+
+         @media screen and (max-width: 950px) {
+            grid-row: 3;
+            grid-column: 1;
+        }
+    
+    }
+    
+    
+    
+    &__imagen {
+        grid-area: imagen;
+        grid-row: 4;
+        grid-column: 4;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 4;
+            grid-column: 1;
+        }
+    
+    }
+    
+    &__mapa {
+        grid-area: mapa;
+        grid-row: 5;
+        grid-column: 1 2;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 5;
+            grid-column: 1;
+        }
+    
+    }
+    
+    &__direccion {
+        grid-area: direccion;        
+        grid-row: 5;
+        grid-column: 3;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 6;
+            grid-column: 1;
+        }
+    
+    }
+    
+    &__formulario {
+        grid-area: formulario;
+        grid-row: 5;
+        grid-column: 4;
+        background-color: rgb(240, 249, 253);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 7;
+            grid-column: 1;
+        }
+    
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(240, 249, 253);
+   
+    &__contacto {   
+        display: flex; 
+        padding-top: 30px;
+    
+    }
+
+    &__contenido{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+
+        h1{
+            padding: 0;
+         
+        }
+
+        ul{
+            text-align: center;
+            list-style: none;
+        }
+    
+    }
+
+    .logo{
+   
+        text-align: center;
+        padding-top: 20px;
+    
+    }
+}
