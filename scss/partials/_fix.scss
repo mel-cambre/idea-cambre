@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-*{
-    margin: 1rem;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
     color: mapa-get ($fijos, link);
     font-weight: bold;
@@ -16,9 +16,11 @@ a{
     }
 }
 
+p {
+    padding-left: 10px;
+  }
 
-
-h1{
+h1 {
     padding-left: 2rem;
     font-size: 25px;
     letter-spacing: 0.3rem;
@@ -81,7 +83,7 @@ body {
 }
 
 
-.barra-item{
+.barra-item {
     padding-left: 4em;
 
     @media screen and (max-width: 1320px) {
@@ -111,19 +113,19 @@ body {
         justify-content: center;
         padding-top: 30px;
 
-        h1{
+        h1 {
             padding: 0;
          
         }
 
-        ul{
+        ul {
             text-align: center;
             list-style: none;
         }
     
     }
 
-    &__logo{
+    &__logo {
    
         text-align: center;
         padding-top: 20px;
