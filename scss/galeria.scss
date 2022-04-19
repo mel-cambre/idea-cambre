@@ -1,0 +1,99 @@
+@import "./partials/variables";
+@import "./partials/fix";
+
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+    "hotel-title"
+    "hotel"
+    "recreo-title"
+    "recreo"
+    "piscina-title"
+    "piscina"
+    "montana-title"
+    "montana";
+
+    &__title1 {
+        grid-area: hotel-title;
+        grid-row: 1;
+        grid-column: 1;
+        background-color: $color-fondo;
+        @extend %centrado
+    
+    }
+
+    &__hotel {
+        grid-area: hotel;
+        grid-row: 2;
+        grid-column: 1;
+        background-color: $color-fondo;
+        @extend %centrado
+
+
+    
+    }
+    
+    &__title2 {
+        grid-area: recreo-title;
+        grid-row: 3;
+        grid-column: 1;
+        background-color: $color-fondo;
+        @extend %centrado
+    
+    }
+    
+    &__recreo {
+        grid-area: recreo;
+        grid-row: 4;
+        grid-column: 1;
+        background-color: $color-fondo;
+        @extend %centrado
+    
+    }
+    
+    &__title3 {
+        grid-area: piscina-title;
+        grid-row: 5;
+        grid-column: 1;
+        background-color: $color-fondo;
+        @extend %centrado
+
+    
+    }
+    
+    &__piscina {
+        grid-area: piscina;
+        grid-row: 6;
+        grid-column: 1;
+        background-color: $color-fondo;
+        @extend %centrado
+
+    }
+    
+    &__title4 {
+        grid-area: montana-title;
+        grid-row: 7;
+        grid-column: 1;
+        background-color: $color-fondo;
+        @extend %centrado
+
+    
+    }
+    
+    &__montana {
+        grid-area: montana;
+        grid-row: 8;
+        grid-column: 1;
+        background-color: $color-fondo;
+        @extend %centrado
+    
+    }
+    
+    
+}

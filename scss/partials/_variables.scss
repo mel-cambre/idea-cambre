@@ -1,5 +1,10 @@
 $color-fondo: rgb(240, 249, 253);
 
+$fijos: (
+	columna: column,
+	link: #897248,
+	color: grey
+);
 
 %card {
 	background-color: white;
@@ -23,4 +28,16 @@ $color-fondo: rgb(240, 249, 253);
     border: 1px solid #D0D0D0;
     display: flex;
     justify-content: center;
+}
+
+%centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex($posicion, $alinear) {
+	display: flex;
+	justify-content: $posicion;
+	align-items: $alinear;
 }

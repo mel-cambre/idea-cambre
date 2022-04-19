@@ -1,0 +1,180 @@
+@import "./partials/variables";
+@import "./partials/fix";
+
+.servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+    "gif gif gif gif"
+    "suite suite ma-suite ma-suite"
+    "j-suite j-suite m-suite m-suite"
+    "hogar entrega seguro peluqueria"
+    "mapa mapa mapa imagen";
+
+    @media screen and (max-width: 950px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "gif gif"
+        "suite suite"
+        "ma-suite ma-suite"
+        "j-suite j-suite"
+        "m-suite m-suite"
+        "hogar entrega"
+        "seguro peluqueria" 
+        "mapa mapa" 
+        "imagen imagen";
+    }
+
+    &__gif {
+        grid-area: gif;
+        grid-row: 1;
+        grid-column: 1 2 3 4;
+        background-color: $color-fondo;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 1;
+            grid-column: 1 2;
+        }
+
+        @extend %centrado
+        
+    }
+
+    &__suite {
+        grid-area: suite;
+        grid-row: 2;
+        grid-column: 1 2;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 2;
+            grid-column: 1 2;
+        }
+
+        @extend %card
+   
+    }
+
+    &__master {
+        grid-area: ma-suite;
+        grid-row: 2;
+        grid-column: 3 4;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 3;
+            grid-column: 1 2;
+        }
+
+        @extend %card
+    }
+
+    &__junior {
+        grid-area: j-suite;
+        grid-row: 3;
+        grid-column: 1 2;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 4;
+            grid-column: 1 2;
+        }
+
+        @extend %card
+    }
+
+    &__mini {
+        grid-area: m-suite;
+        grid-row: 3;
+        grid-column: 3 4;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 5;
+            grid-column: 1 2;
+        }
+
+        @extend %card
+    }
+
+    &__hogar {
+        grid-area: hogar;
+        grid-row: 4;
+        grid-column: 1;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 6;
+            grid-column: 1;
+        }
+
+        @extend %tarjeta
+        
+    }
+
+    &__entrega {
+        grid-area: entrega;
+        grid-row: 4;
+        grid-column: 2;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 6;
+            grid-column: 2;
+        }
+
+        @extend %tarjeta
+    }
+    
+    &__seguro {
+        grid-area: seguro;
+        grid-row: 4;
+        grid-column: 3;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 7;
+            grid-column: 1;
+        }
+
+        @extend %tarjeta
+    }
+    
+    &__peluqueria {
+        grid-area: peluqueria;
+        grid-row: 4;
+        grid-column: 4;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 7;
+            grid-column: 2;
+        }
+
+        @extend %tarjeta
+    }
+    
+    &__mapa {
+        grid-area: mapa;
+        grid-row: 5;
+        grid-column: 1 2 3;
+        background-color: $color-fondo;
+        @include flex(space-evenly, center);
+
+        @media screen and (max-width: 950px) {
+            grid-row: 8;
+            grid-column: 1 2;
+        }
+    }
+    
+    &__imagen {
+        grid-area: imagen;
+        grid-row: 5;
+        grid-column: 4;
+        background-color: $color-fondo;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 9;
+            grid-column: 1 2;
+        }
+
+        @extend %centrado
+
+    }
+}

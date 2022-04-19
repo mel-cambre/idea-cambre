@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 *{
-    margin: 0;
+    margin: 1rem;
     padding: 0;
     box-sizing: border-box;
 }
 
 a{
     text-decoration: none;
-    color: #897248;
+    color: mapa-get ($fijos, link);
     font-weight: bold;
 
     &:hover{
@@ -16,9 +16,7 @@ a{
     }
 }
 
-p{
-    padding-left: 10px;
-}
+
 
 h1{
     padding-left: 2rem;
@@ -30,7 +28,7 @@ h1{
 }
 
 h4 {
-    color: grey;
+    color: mapa-get ($fijos, color);
     display: flex;
     justify-content:flex-start;
     padding-left: 1rem;
