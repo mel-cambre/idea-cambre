@@ -21,7 +21,8 @@
 a {
   text-decoration: none;
   color: #897248;
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 26px;
 }
 
 a:hover {
@@ -75,7 +76,7 @@ body {
 }
 
 .fondo-nav {
-  background-color: #f0f9fd;
+  background-color: #d9f3ff;
 }
 
 .barra-nav {
@@ -93,12 +94,22 @@ body {
 }
 
 .barra-item {
-  padding-left: 6em;
+  padding-left: 5rem;
 }
 
 @media screen and (max-width: 1320px) {
   .barra-item {
-    padding-left: 1.5em;
+    padding-left: 3rem;
+  }
+}
+
+.barra-item1 {
+  padding-left: 4rem;
+}
+
+@media screen and (max-width: 1320px) {
+  .barra-item1 {
+    padding-left: 3rem;
   }
 }
 
@@ -110,7 +121,7 @@ body {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #f0f9fd;
+  background-color: #d9f3ff;
 }
 
 .footer__contacto {
@@ -137,6 +148,10 @@ body {
 .footer__contenido ul {
   text-align: center;
   list-style: none;
+}
+
+.footer__contenido a {
+  font-size: 16px;
 }
 
 .footer__logo {

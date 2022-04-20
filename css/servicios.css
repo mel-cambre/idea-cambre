@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-.habitaciones__zen, .habitaciones__white, .habitaciones__happy, .habitaciones__rainy {
+.servicios__suite, .servicios__master, .servicios__junior, .servicios__mini {
   background-color: white;
   -webkit-box-shadow: 5px 5px 10px grey;
           box-shadow: 5px 5px 10px grey;
@@ -9,18 +9,26 @@
   display: flex;
 }
 
-.habitaciones__piscina, .habitaciones__montana, .habitaciones__lago, .habitaciones__recreo {
-  background-color: white;
-  border: 1px solid #D0D0D0;
+.servicios__hogar, .servicios__entrega, .servicios__seguro, .servicios__peluqueria {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: 1px solid #D0D0D0;
+  text-align: center;
 }
 
-.habitaciones__frase, .habitaciones__descripcion, .habitaciones__imagen, .habitaciones__titulo {
+.servicios__gif, .servicios__imagen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,147 +188,131 @@ body {
   padding-top: 20px;
 }
 
-.habitaciones {
+.servicios {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: auto auto auto auto auto auto auto;
-      grid-template-rows: auto auto auto auto auto auto auto;
+  -ms-grid-rows: auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto;
   height: auto;
   grid-gap: 0.3rem;
-      grid-template-areas: "frase frase frase frase" "h-descripcion h-descripcion h-descripcion h-imagen" "zen-suite zen-suite white-vibes white-vibes" "happy-day happy-day rainy-day rainy-day" "actividades actividades actividades actividades" "h-piscina h-piscina h-montana h-montana" "lago lago h-recreo h-recreo";
+      grid-template-areas: "gif gif gif gif" "suite suite ma-suite ma-suite" "j-suite j-suite m-suite m-suite" "hogar entrega seguro peluqueria" "s-mapa s-mapa s-mapa s-imagen";
 }
 
 @media screen and (max-width: 950px) {
-  .habitaciones {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto auto;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
-        grid-template-areas: "frase" "h-descripcion" "h-imagen" "zen-suite" "white-vibes" "happy-day" "rainy-day" "actividades" "h-piscina" "h-montana"  "lago"  "h-recreo";
+  .servicios {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "gif gif" "suite suite" "ma-suite ma-suite" "j-suite j-suite" "m-suite m-suite" "hogar entrega" "seguro peluqueria"  "s-mapa s-mapa"  "s-imagen s-imagen";
   }
 }
 
-.habitaciones__frase {
+.servicios__gif {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
-  grid-area: frase;
+  grid-area: gif;
   -ms-grid-row: 1;
   grid-row: 1;
   grid-column: 1 2 3 4;
   background-color: #f0f9fd;
 }
 
-.habitaciones__frase h1 {
-  font-size: 22px;
-  letter-spacing: 0rem;
-}
-
 @media screen and (max-width: 950px) {
-  .habitaciones__frase {
+  .servicios__gif {
     -ms-grid-row: 1;
     grid-row: 1;
-    -ms-grid-column: 1;
-    grid-column: 1;
+    grid-column: 1 2;
   }
 }
 
-.habitaciones__descripcion {
+.servicios__suite {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: h-descripcion;
+  -ms-grid-column-span: 2;
+  grid-area: suite;
   -ms-grid-row: 2;
   grid-row: 2;
-  grid-column: 1 2 3;
-  background-color: #f0f9fd;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  grid-column: 1 2;
 }
 
 @media screen and (max-width: 950px) {
-  .habitaciones__descripcion {
+  .servicios__suite {
     -ms-grid-row: 2;
     grid-row: 2;
-    -ms-grid-column: 1;
-    grid-column: 1;
+    grid-column: 1 2;
   }
 }
 
-.habitaciones__imagen {
+.servicios__master {
   -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  grid-area: h-imagen;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: ma-suite;
   -ms-grid-row: 2;
   grid-row: 2;
-  -ms-grid-column: 4;
-  grid-column: 4;
-  background-color: #f0f9fd;
+  grid-column: 3 4;
 }
 
 @media screen and (max-width: 950px) {
-  .habitaciones__imagen {
+  .servicios__master {
     -ms-grid-row: 3;
     grid-row: 3;
-    -ms-grid-column: 1;
-    grid-column: 1;
+    grid-column: 1 2;
   }
 }
 
-.habitaciones__zen {
+.servicios__junior {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: zen-suite;
+  grid-area: j-suite;
   -ms-grid-row: 3;
   grid-row: 3;
   grid-column: 1 2;
 }
 
 @media screen and (max-width: 950px) {
-  .habitaciones__zen {
+  .servicios__junior {
     -ms-grid-row: 4;
     grid-row: 4;
-    -ms-grid-column: 1;
-    grid-column: 1;
+    grid-column: 1 2;
   }
 }
 
-.habitaciones__white {
+.servicios__mini {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
-  grid-area: white-vibes;
+  grid-area: m-suite;
   -ms-grid-row: 3;
   grid-row: 3;
   grid-column: 3 4;
 }
 
 @media screen and (max-width: 950px) {
-  .habitaciones__white {
+  .servicios__mini {
     -ms-grid-row: 5;
     grid-row: 5;
-    -ms-grid-column: 1;
-    grid-column: 1;
+    grid-column: 1 2;
   }
 }
 
-.habitaciones__happy {
+.servicios__hogar {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: happy-day;
+  grid-area: hogar;
   -ms-grid-row: 4;
   grid-row: 4;
-  grid-column: 1 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
 @media screen and (max-width: 950px) {
-  .habitaciones__happy {
+  .servicios__hogar {
     -ms-grid-row: 6;
     grid-row: 6;
     -ms-grid-column: 1;
@@ -328,18 +320,37 @@ body {
   }
 }
 
-.habitaciones__rainy {
+.servicios__entrega {
   -ms-grid-row: 4;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: rainy-day;
+  -ms-grid-column: 2;
+  grid-area: entrega;
   -ms-grid-row: 4;
   grid-row: 4;
-  grid-column: 3 4;
+  -ms-grid-column: 2;
+  grid-column: 2;
 }
 
 @media screen and (max-width: 950px) {
-  .habitaciones__rainy {
+  .servicios__entrega {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+}
+
+.servicios__seguro {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: seguro;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+@media screen and (max-width: 950px) {
+  .servicios__seguro {
     -ms-grid-row: 7;
     grid-row: 7;
     -ms-grid-column: 1;
@@ -347,98 +358,69 @@ body {
   }
 }
 
-.habitaciones__titulo {
+.servicios__peluqueria {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: peluqueria;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+@media screen and (max-width: 950px) {
+  .servicios__peluqueria {
+    -ms-grid-row: 7;
+    grid-row: 7;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+}
+
+.servicios__mapa {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: actividades;
+  -ms-grid-column-span: 3;
+  grid-area: s-mapa;
   -ms-grid-row: 5;
   grid-row: 5;
-  grid-column: 1 2 3 4;
+  grid-column: 1 2 3;
+  background-color: #f0f9fd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 950px) {
-  .habitaciones__titulo {
+  .servicios__mapa {
     -ms-grid-row: 8;
     grid-row: 8;
-    -ms-grid-column: 1;
-    grid-column: 1;
+    grid-column: 1 2;
   }
 }
 
-.habitaciones__piscina {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: h-piscina;
-  -ms-grid-row: 6;
-  grid-row: 6;
-  grid-column: 1 2;
+.servicios__imagen {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: s-imagen;
+  -ms-grid-row: 5;
+  grid-row: 5;
+  -ms-grid-column: 4;
+  grid-column: 4;
+  background-color: #f0f9fd;
 }
 
 @media screen and (max-width: 950px) {
-  .habitaciones__piscina {
+  .servicios__imagen {
     -ms-grid-row: 9;
     grid-row: 9;
-    -ms-grid-column: 1;
-    grid-column: 1;
+    grid-column: 1 2;
   }
 }
-
-.habitaciones__montana {
-  -ms-grid-row: 6;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: h-montana;
-  -ms-grid-row: 6;
-  grid-row: 6;
-  grid-column: 3 4;
-}
-
-@media screen and (max-width: 950px) {
-  .habitaciones__montana {
-    -ms-grid-row: 10;
-    grid-row: 10;
-    -ms-grid-column: 1;
-    grid-column: 1;
-  }
-}
-
-.habitaciones__lago {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: lago;
-  -ms-grid-row: 7;
-  grid-row: 7;
-  grid-column: 1 2;
-}
-
-@media screen and (max-width: 950px) {
-  .habitaciones__lago {
-    -ms-grid-row: 11;
-    grid-row: 11;
-    -ms-grid-column: 1;
-    grid-column: 1;
-  }
-}
-
-.habitaciones__recreo {
-  -ms-grid-row: 7;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: h-recreo;
-  -ms-grid-row: 7;
-  grid-row: 7;
-  grid-column: 3 4;
-}
-
-@media screen and (max-width: 950px) {
-  .habitaciones__recreo {
-    -ms-grid-row: 12;
-    grid-row: 12;
-    -ms-grid-column: 1;
-    grid-column: 1;
-  }
-}
-/*# sourceMappingURL=habitaciones.css.map */
+/*# sourceMappingURL=servicios.css.map */

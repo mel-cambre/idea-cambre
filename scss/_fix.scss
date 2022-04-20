@@ -9,7 +9,8 @@
 a {
     text-decoration: none;
     color: map-get($nav, color-uno);
-    font-weight: bold;
+    font-weight: 800;
+    font-size: 26px;
 
     &:hover{
         color: #aea187;
@@ -64,7 +65,7 @@ body {
 }
 
 .fondo-nav {
-    background-color: $color-fondo;
+    background-color: rgb(217, 243, 255);
 }
 
 .barra-nav {
@@ -85,23 +86,31 @@ body {
 
 
 .barra-item {
-    padding-left: 6em;
+    padding-left: 5rem;
 
     @media screen and (max-width: 1320px) {
 
-       padding-left: 1.5em;
+       padding-left: 3rem;
     
     }
 }
 
+.barra-item1 {
+    padding-left: 4rem;
 
+    @media screen and (max-width: 1320px) {
+
+       padding-left: 3rem;
+    
+    }
+}
 
 
 .footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: $color-fondo;
+    background-color: rgb(217, 243, 255);
    
     &__contacto {   
         display: flex; 
@@ -122,6 +131,10 @@ body {
         ul {
             text-align: center;
             list-style: none;
+        }
+
+        a {
+            font-size: 16px;
         }
     
     }
