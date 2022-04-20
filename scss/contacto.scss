@@ -1,0 +1,157 @@
+
+@import "variable";
+@import "fix";
+
+
+
+
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+    "gif-casa gif-casa gif-casa gif-casa"
+    "nosotros nosotros nosotros nosotros"
+    "contactos contactos contactos c-imagen"
+    "c-mapa c-mapa direccion formulario";
+
+    @media screen and (max-width: 950px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "gif-casa"
+        "nosotros"
+        "contactos"
+        "c-imagen"
+        "c-mapa" 
+        "direccion"
+        "formulario";
+    }
+
+
+
+
+    &__gif {
+        grid-area: gif-casa;
+        grid-row: 1;
+        grid-column: 1 2 3 4;
+        background-color: $color-fondo;
+        @extend %centrado;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        
+    
+    }
+    
+    &__nosotros {
+        grid-area: nosotros;
+        grid-row: 2;
+        grid-column: 1 2 3 4;
+        background-color: $color-fondo;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 2;
+            grid-column: 1;
+        }
+    
+    }
+    
+    &__contactos {
+        grid-area: contactos;
+        grid-row: 4;
+        grid-column: 1 2 3;
+        background-color: $color-fondo;
+
+        .orden {
+            @include flex(space-evenly, center);
+
+        }
+
+        ul{
+            list-style: none;
+            line-height: 60px;
+         
+         }
+
+         @media screen and (max-width: 950px) {
+            grid-row: 3;
+            grid-column: 1;
+        }
+    
+    }
+    
+    
+    
+    &__imagen {
+        grid-area: c-imagen;
+        grid-row: 4;
+        grid-column: 4;
+        background-color: $color-fondo;
+        @extend %centrado;
+         
+
+        @media screen and (max-width: 950px) {
+            grid-row: 4;
+            grid-column: 1;
+        }
+
+        
+    
+    }
+    
+    &__mapa {
+        grid-area: c-mapa;
+        grid-row: 5;
+        grid-column: 1 2;
+        background-color: $color-fondo;
+        @include flex(space-around, center);
+
+        @media screen and (max-width: 950px) {
+            grid-row: 5;
+            grid-column: 1;
+        }
+    
+    }
+    
+    &__direccion {
+        grid-area: direccion;        
+        grid-row: 5;
+        grid-column: 3;
+        background-color: $color-fondo;
+        @extend %centrado;
+        flex-direction: column;
+        
+        @media screen and (max-width: 950px) {
+            grid-row: 6;
+            grid-column: 1;
+        }
+
+        
+        
+    
+    }
+    
+    &__formulario {
+        grid-area: formulario;
+        grid-row: 5;
+        grid-column: 4;
+        background-color: $color-fondo;
+        @extend %centrado;
+        flex-direction: column;
+
+
+        @media screen and (max-width: 950px) {
+            grid-row: 7;
+            grid-column: 1;
+        }
+        
+    }
+
+    
+}

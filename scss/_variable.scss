@@ -1,0 +1,46 @@
+
+$color-fondo: rgb(240, 249, 253);
+
+
+$nav: (
+    // clave - valor
+	color-uno: #897248,
+	color-dos: grey,
+);
+
+%card {
+	background-color: white;
+    box-shadow: 5px 5px 10px grey;
+    border: 1px solid;
+    display: flex;
+}
+
+%tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #D0D0D0;
+    text-align: center;
+}
+
+%actividades {
+    background-color: white;
+    border: 1px solid #D0D0D0;
+    display: flex;
+    justify-content: center;
+}
+
+%centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex($posicion, $alinear) {
+	display: flex;
+	justify-content: $posicion;
+	align-items: $alinear;
+}
+

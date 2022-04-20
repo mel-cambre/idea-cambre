@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.galeria__title1, .galeria__hotel, .galeria__title2, .galeria__recreo, .galeria__title3, .galeria__piscina, .galeria__title4, .galeria__montana {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #897248;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #aea187;
+}
+
+p {
+  padding-left: 10px;
+}
+
+h1 {
+  padding-left: 2rem;
+  font-size: 25px;
+  letter-spacing: 0.3rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+h4 {
+  color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 1rem;
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 20px;
+  padding-left: 0rem;
+  letter-spacing: 0rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: black;
+  line-height: 30px;
+}
+
+.nav-enlace a {
+  color: #897248;
+  font-weight: bold;
+}
+
+.fondo-nav {
+  background-color: #f0f9fd;
+}
+
+.barra-nav {
+  font-size: 22px;
+}
+
+.medida {
+  width: 40rem;
+}
+
+@media screen and (max-width: 950px) {
+  .medida {
+    width: 25rem;
+  }
+}
+
+.barra-item {
+  padding-left: 6em;
+}
+
+@media screen and (max-width: 1320px) {
+  .barra-item {
+    padding-left: 1.5em;
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #f0f9fd;
+}
+
+.footer__contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+}
+
+.footer__contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+}
+
+.footer__contenido h1 {
+  padding: 0;
+}
+
+.footer__contenido ul {
+  text-align: center;
+  list-style: none;
+}
+
+.footer__logo {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.galeria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto auto auto;
+  height: auto;
+  grid-gap: 0.3rem;
+      grid-template-areas: "hotel-title" "hotel" "recreo-title" "g-recreo" "piscina-title" "g-piscina" "montana-title" "g-montana";
+}
+
+.galeria__title1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hotel-title;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-color: #f0f9fd;
+}
+
+.galeria__hotel {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: hotel;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-color: #f0f9fd;
+}
+
+.galeria__title2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: recreo-title;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-color: #f0f9fd;
+}
+
+.galeria__recreo {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: g-recreo;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-color: #f0f9fd;
+}
+
+.galeria__title3 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: piscina-title;
+  -ms-grid-row: 5;
+  grid-row: 5;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-color: #f0f9fd;
+}
+
+.galeria__piscina {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: g-piscina;
+  -ms-grid-row: 6;
+  grid-row: 6;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-color: #f0f9fd;
+}
+
+.galeria__title4 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: montana-title;
+  -ms-grid-row: 7;
+  grid-row: 7;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-color: #f0f9fd;
+}
+
+.galeria__montana {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: g-montana;
+  -ms-grid-row: 8;
+  grid-row: 8;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-color: #f0f9fd;
+}
+/*# sourceMappingURL=galeria.css.map */

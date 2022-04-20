@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: map-get($nav, color-uno);
+    font-weight: bold;
+
+    &:hover{
+        color: #aea187;
+    }
+}
+
+p {
+    padding-left: 10px;
+  }
+
+h1 {
+    padding-left: 2rem;
+    font-size: 25px;
+    letter-spacing: 0.3rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+h4 {
+    color: map-get($nav, color-dos);
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 20px;
+    padding-left: 0rem;
+    letter-spacing: 0rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+
+body {
+    font-size: 14px;
+    font-family: "Roboto", Helvetica, sans-serif;
+    color: black;
+    line-height: 30px;
+
+}
+
+.nav-enlace {
+    
+    a {
+    color: map-get($nav, color-uno);
+    font-weight: bold;
+    }
+}
+
+.fondo-nav {
+    background-color: $color-fondo;
+}
+
+.barra-nav {
+    font-size: 22px;
+    
+
+}
+
+.medida {
+    width: 40rem;
+
+    @media screen and (max-width: 950px) {
+
+        width: 25rem;
+     
+     }
+}
+
+
+.barra-item {
+    padding-left: 6em;
+
+    @media screen and (max-width: 1320px) {
+
+       padding-left: 1.5em;
+    
+    }
+}
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: $color-fondo;
+   
+    &__contacto {   
+        display: flex; 
+        padding-top: 30px;
+    
+    }
+
+    &__contenido{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+
+        h1 {
+            padding: 0;
+         
+        }
+
+        ul {
+            text-align: center;
+            list-style: none;
+        }
+    
+    }
+
+    &__logo {
+   
+        text-align: center;
+        padding-top: 20px;
+    
+    }
+}

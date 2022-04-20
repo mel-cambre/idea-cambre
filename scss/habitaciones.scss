@@ -1,0 +1,233 @@
+
+@import "variable";
+@import "fix";
+
+
+
+
+.habitaciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+    "frase frase frase frase"
+    "h-descripcion h-descripcion h-descripcion h-imagen"
+    "zen-suite zen-suite white-vibes white-vibes"
+    "happy-day happy-day rainy-day rainy-day"
+    "actividades actividades actividades actividades"
+    "h-piscina h-piscina h-montana h-montana"
+    "lago lago h-recreo h-recreo";
+
+
+    @media screen and (max-width: 950px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "frase"
+        "h-descripcion"
+        "h-imagen"
+        "zen-suite"
+        "white-vibes"
+        "happy-day"
+        "rainy-day"
+        "actividades"
+        "h-piscina"
+        "h-montana" 
+        "lago" 
+        "h-recreo";
+    }
+
+    &__frase {
+        grid-area: frase;
+        grid-row: 1;
+        grid-column: 1 2 3 4;
+        background-color: $color-fondo;
+        @extend %centrado;
+
+        h1 {
+            font-size: 22px;
+            letter-spacing: 0rem;
+        }    
+
+        @media screen and (max-width: 950px) {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        
+        
+    }
+    
+    
+    &__descripcion {
+        grid-area: h-descripcion;
+        grid-row: 2;
+        grid-column: 1 2 3;
+        background-color: $color-fondo;
+        flex-direction: column;
+        @extend %centrado;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        
+       
+    }
+    
+    &__imagen {
+        grid-area: h-imagen;
+        grid-row: 2;
+        grid-column: 4;
+        background-color: $color-fondo;
+        @extend %centrado;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 3;
+            grid-column: 1;
+        }
+
+        
+        
+    }
+
+    &__zen {
+        grid-area: zen-suite;
+        grid-row: 3;
+        grid-column: 1 2;
+        @extend %card;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 4;
+            grid-column: 1;
+        }
+
+        
+        
+    }
+    
+    &__white {
+        grid-area: white-vibes;
+        grid-row: 3;
+        grid-column: 3 4;
+        @extend %card;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 5;
+            grid-column: 1;
+        }
+
+        
+        
+    }
+    
+    
+    &__happy {
+        grid-area: happy-day;
+        grid-row: 4;
+        grid-column: 1 2;
+        @extend %card;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 6;
+            grid-column: 1;
+        }
+
+       
+        
+    }
+
+    &__rainy {
+        grid-area: rainy-day;
+        grid-row: 4;
+        grid-column: 3 4;
+        @extend %card;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 7;
+            grid-column: 1;
+        }
+
+        
+        
+    }
+
+    &__titulo {
+        grid-area: actividades;
+        grid-row: 5;
+        grid-column: 1 2 3 4;
+        @extend %centrado;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 8;
+            grid-column: 1;
+        }
+
+        
+        
+    }
+    
+    &__piscina {
+        grid-area: h-piscina;
+        grid-row: 6;
+        grid-column: 1 2;
+        @extend %actividades;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 9;
+            grid-column: 1;
+        }
+
+        
+        
+    }
+    
+    &__montana {
+        grid-area: h-montana;
+        grid-row: 6;
+        grid-column: 3 4;
+        @extend %actividades;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 10;
+            grid-column: 1;
+        }
+
+        
+        
+    }
+    
+    &__lago {
+        grid-area: lago;
+        grid-row: 7;
+        grid-column: 1 2;
+        @extend %actividades;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 11;
+            grid-column: 1;
+        }
+
+        
+        
+    }
+    
+    &__recreo {
+        grid-area: h-recreo;
+        grid-row: 7;
+        grid-column: 3 4;
+        @extend %actividades;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 12;
+            grid-column: 1;
+        }
+
+        
+        
+    }
+
+}
