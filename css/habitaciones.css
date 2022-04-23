@@ -63,7 +63,7 @@ h1 {
   line-height: 3rem;
 }
 
-h4 {
+h2 {
   color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,7 +72,8 @@ h4 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-left: 1rem;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 h5 {
@@ -105,7 +106,8 @@ body {
 }
 
 .medida {
-  width: 40rem;
+  width: 50rem;
+  height: 30rem;
 }
 
 @media screen and (max-width: 950px) {
@@ -149,6 +151,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 30px;
 }
 
@@ -172,7 +180,8 @@ body {
 }
 
 .footer__contenido a {
-  font-size: 16px;
+  font-size: 18px;
+  color: #6e5c3c;
 }
 
 .footer__logo {
@@ -192,7 +201,7 @@ body {
       grid-template-areas: "frase frase frase frase" "h-descripcion h-descripcion h-descripcion h-imagen" "zen-suite zen-suite white-vibes white-vibes" "happy-day happy-day rainy-day rainy-day" "actividades actividades actividades actividades" "h-piscina h-piscina h-montana h-montana" "lago lago h-recreo h-recreo";
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 999px) {
   .habitaciones {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -211,6 +220,7 @@ body {
   grid-row: 1;
   grid-column: 1 2 3 4;
   background-color: #f0f9fd;
+  text-align: center;
 }
 
 .habitaciones__frase h1 {

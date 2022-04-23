@@ -21,7 +21,7 @@
     "lago lago h-recreo h-recreo";
 
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 999px) {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
         grid-template-areas: 
@@ -45,6 +45,7 @@
         grid-column: 1 2 3 4;
         background-color: $color-fondo;
         @extend %centrado;
+        text-align: center;
 
         h1 {
             font-size: 22px;

@@ -71,7 +71,7 @@ h1 {
   line-height: 3rem;
 }
 
-h4 {
+h2 {
   color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,7 +80,8 @@ h4 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-left: 1rem;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 h5 {
@@ -113,7 +114,8 @@ body {
 }
 
 .medida {
-  width: 40rem;
+  width: 50rem;
+  height: 30rem;
 }
 
 @media screen and (max-width: 950px) {
@@ -157,6 +159,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 30px;
 }
 
@@ -180,7 +188,8 @@ body {
 }
 
 .footer__contenido a {
-  font-size: 16px;
+  font-size: 18px;
+  color: #6e5c3c;
 }
 
 .footer__logo {
@@ -197,7 +206,7 @@ body {
       grid-template-rows: auto auto auto auto auto;
   height: auto;
   grid-gap: 0.3rem;
-      grid-template-areas: "gif gif gif gif" "suite suite ma-suite ma-suite" "j-suite j-suite m-suite m-suite" "hogar entrega seguro peluqueria" "s-mapa s-mapa s-mapa s-imagen";
+      grid-template-areas: "gif gif gif gif" "suite suite ma-suite ma-suite" "j-suite j-suite m-suite m-suite" "hogar entrega seguro peluqueria" "s-mapa s-mapa s-mapa img";
 }
 
 @media screen and (max-width: 950px) {
@@ -206,7 +215,7 @@ body {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto auto auto auto auto auto auto auto auto;
         grid-template-rows: auto auto auto auto auto auto auto auto auto;
-        grid-template-areas: "gif gif" "suite suite" "ma-suite ma-suite" "j-suite j-suite" "m-suite m-suite" "hogar entrega" "seguro peluqueria"  "s-mapa s-mapa"  "s-imagen s-imagen";
+        grid-template-areas: "gif gif" "suite suite" "ma-suite ma-suite" "j-suite j-suite" "m-suite m-suite" "hogar entrega" "seguro peluqueria"  "s-mapa s-mapa"  "img img";
   }
 }
 
@@ -408,7 +417,7 @@ body {
 .servicios__imagen {
   -ms-grid-row: 5;
   -ms-grid-column: 4;
-  grid-area: s-imagen;
+  grid-area: img;
   -ms-grid-row: 5;
   grid-row: 5;
   -ms-grid-column: 4;

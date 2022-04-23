@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-.galeria__title1, .galeria__hotel, .galeria__title2, .galeria__recreo, .galeria__title3, .galeria__piscina, .galeria__title4, .galeria__montana {
+.galeria__title1, .galeria__hotel, .galeria__title2, .galeria__lago, .galeria__title3, .galeria__piscina, .galeria__title4, .galeria__montana {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,7 +42,7 @@ h1 {
   line-height: 3rem;
 }
 
-h4 {
+h2 {
   color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,7 +51,8 @@ h4 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-left: 1rem;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 h5 {
@@ -84,7 +85,8 @@ body {
 }
 
 .medida {
-  width: 40rem;
+  width: 50rem;
+  height: 30rem;
 }
 
 @media screen and (max-width: 950px) {
@@ -128,6 +130,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 30px;
 }
 
@@ -151,7 +159,8 @@ body {
 }
 
 .footer__contenido a {
-  font-size: 16px;
+  font-size: 18px;
+  color: #6e5c3c;
 }
 
 .footer__logo {
@@ -168,7 +177,7 @@ body {
       grid-template-rows: auto auto auto auto auto auto auto auto;
   height: auto;
   grid-gap: 0.3rem;
-      grid-template-areas: "hotel-title" "hotel" "recreo-title" "g-recreo" "piscina-title" "g-piscina" "montana-title" "g-montana";
+      grid-template-areas: "hotel-title" "hotel" "lago-title" "g-lago" "piscina-title" "g-piscina" "montana-title" "g-montana";
 }
 
 .galeria__title1 {
@@ -196,7 +205,7 @@ body {
 .galeria__title2 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: recreo-title;
+  grid-area: lago-title;
   -ms-grid-row: 3;
   grid-row: 3;
   -ms-grid-column: 1;
@@ -204,10 +213,10 @@ body {
   background-color: #f0f9fd;
 }
 
-.galeria__recreo {
+.galeria__lago {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
-  grid-area: g-recreo;
+  grid-area: g-lago;
   -ms-grid-row: 4;
   grid-row: 4;
   -ms-grid-column: 1;

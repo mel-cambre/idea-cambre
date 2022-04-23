@@ -42,7 +42,7 @@ h1 {
   line-height: 3rem;
 }
 
-h4 {
+h2 {
   color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,7 +51,8 @@ h4 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-left: 1rem;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 h5 {
@@ -84,7 +85,8 @@ body {
 }
 
 .medida {
-  width: 40rem;
+  width: 50rem;
+  height: 30rem;
 }
 
 @media screen and (max-width: 950px) {
@@ -128,6 +130,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 30px;
 }
 
@@ -151,7 +159,8 @@ body {
 }
 
 .footer__contenido a {
-  font-size: 16px;
+  font-size: 18px;
+  color: #6e5c3c;
 }
 
 .footer__logo {

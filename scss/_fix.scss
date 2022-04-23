@@ -30,12 +30,13 @@ h1 {
     line-height: 3rem;
 }
 
-h4 {
+h2 {
     color: map-get($nav, color-dos);
     display: flex;
     justify-content: flex-start;
     padding-left: 1rem;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 h5 {
@@ -75,7 +76,8 @@ body {
 }
 
 .medida {
-    width: 40rem;
+    width: 50rem;
+    height: 30rem;   
 
     @media screen and (max-width: 950px) {
 
@@ -114,6 +116,8 @@ body {
    
     &__contacto {   
         display: flex; 
+        justify-content: center;
+        align-items: center;
         padding-top: 30px;
     
     }
@@ -134,7 +138,8 @@ body {
         }
 
         a {
-            font-size: 16px;
+            font-size: 18px;
+            color: #6e5c3c;
         }
     
     }

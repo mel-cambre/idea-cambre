@@ -14,7 +14,7 @@
     "suite suite ma-suite ma-suite"
     "j-suite j-suite m-suite m-suite"
     "hogar entrega seguro peluqueria"
-    "s-mapa s-mapa s-mapa s-imagen";
+    "s-mapa s-mapa s-mapa img";
 
     @media screen and (max-width: 950px) {
         grid-template-columns: 1fr 1fr;
@@ -28,7 +28,7 @@
         "hogar entrega"
         "seguro peluqueria" 
         "s-mapa s-mapa" 
-        "s-imagen s-imagen";
+        "img img";
     }
 
     &__gif {
@@ -113,6 +113,14 @@
             grid-column: 1;
         }
        
+        h2{
+            font-size: 20px;
+        padding-left: 0rem;
+        letter-spacing: 0rem;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 3rem;
+        }
         
     }
 
@@ -127,6 +135,15 @@
             grid-column: 2;
         }
 
+        h2{
+            font-size: 20px;
+        padding-left: 0rem;
+        letter-spacing: 0rem;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 3rem;
+        }
+        
        
     }
     
@@ -141,6 +158,15 @@
             grid-column: 1;
         }
 
+        h2{
+            font-size: 20px;
+        padding-left: 0rem;
+        letter-spacing: 0rem;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 3rem;
+        }
+        
         
     }
     
@@ -155,6 +181,14 @@
             grid-column: 2;
         }
 
+        h2{
+            font-size: 20px;
+        padding-left: 0rem;
+        letter-spacing: 0rem;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 3rem;
+        }
         
     }
     
@@ -172,7 +206,7 @@
     }
     
     &__imagen {
-        grid-area: s-imagen;
+        grid-area: img;
         grid-row: 5;
         grid-column: 4;
         background-color: $color-fondo;
@@ -180,7 +214,7 @@
 
         @media screen and (max-width: 950px) {
             grid-row: 9;
-            grid-column: 1 2;
+            grid-column:1 2;
         }
 
         

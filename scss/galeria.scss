@@ -15,8 +15,8 @@
     grid-template-areas: 
     "hotel-title"
     "hotel"
-    "recreo-title"
-    "g-recreo"
+    "lago-title"
+    "g-lago"
     "piscina-title"
     "g-piscina"
     "montana-title"
@@ -43,7 +43,7 @@
     }
     
     &__title2 {
-        grid-area: recreo-title;
+        grid-area: lago-title;
         grid-row: 3;
         grid-column: 1;
         background-color: $color-fondo;
@@ -51,8 +51,8 @@
     
     }
     
-    &__recreo {
-        grid-area: g-recreo;
+    &__lago {
+        grid-area: g-lago;
         grid-row: 4;
         grid-column: 1;
         background-color: $color-fondo;
