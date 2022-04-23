@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 *{
-    margin: 2px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -20,6 +20,15 @@ p{
     padding-left: 10px;
 }
 
+h1{
+    padding-left: 2rem;
+    font-size: 25px;
+    letter-spacing: 0.3rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
 body {
     font-size: 14px;
     font-family: "Roboto", Helvetica, sans-serif;
@@ -27,6 +36,7 @@ body {
     line-height: 30px;
 
 }
+
 
 .nav-enlace a{
     color: #897248;
@@ -42,516 +52,472 @@ body {
 
 }
 
-.barra-item1{
-    padding-left: 2em;
-}
+
 
 .barra-item{
     padding-left: 4em;
 }
 
-
-
-.container-index {
+.index {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 265px 200px 250px; 
-    height: 100h; 
-    grid-gap: 2px; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
     grid-template-areas: 
-            "baner baner"
-            "welcome descripcion"
-            "welcome imagen1" ; 
-
+    "baner baner"
+    "presentacion descripcion"
+    "unicos imagen";
 }
- 
-.baner{
+
+.index-baner {
     grid-area: baner;
     background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.welcome{
-    grid-area: welcome;
+
+.index-presentacion {
+    grid-area: presentacion;
     background-color: rgb(240, 249, 253);
+    padding-top: 1rem;
+
 
 }
 
-.welcome h2{
-    font-size: 26px;
-    padding-left: 30px;
-    letter-spacing: 10px;
-    font-style: oblique;
-    padding-top: 20px;
-    line-height: 60px;
-}
 
-.descripcion{
+.index-descripcion {
     grid-area: descripcion;
     background-color: rgb(240, 249, 253);
-
-}
-
-.descripcion h2{
-    font-size: 26px;
-    padding-left: 30px;
-    letter-spacing: 10px;
-    font-style: oblique;
-    padding-top: 20px;
-    line-height: 60px;
-}
-
-.imagen1{
-    grid-area: imagen1;
-    background-color: rgb(240, 249, 253);
+    padding-top: 1rem;
 
 }
 
 
-
-
-
-
-.container-servicios {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 250px 300px 350px 300px; 
-    height: 168vh; 
-    grid-gap: 2px; 
-    grid-template-areas: 
-            "baner2 baner2 baner2 baner2"
-            "mapa-serv mapa-serv imagen2 imagen2"
-            "suite ma-suite j-suite m-suite"
-            "hogar entrega seguro-vet peluqueria"; 
-
-}
-
-.container-servicios h2{
-    font-size: 18px;
-    font-weight: bold;
-
-}
-
-.baner2{
-    grid-area: baner2;
-    background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 20px;
-}
-
-.mapa-serv{
-    grid-area: mapa-serv;
+.index-imagen {
+    grid-area: imagen;
     background-color: rgb(240, 249, 253);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+
+}
+
+.index-unicos {
+    grid-area: unicos;
+    background-color: rgb(240, 249, 253);
+    padding-top: 1rem;
+}
+
+
+
+.servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+    "gif gif gif gif"
+    "suite suite ma-suite ma-suite"
+    "j-suite j-suite m-suite m-suite"
+    "hogar entrega seguro peluqueria"
+    "mapa mapa mapa imagen";
+}
+
+.servicios-gif {
+    grid-area: gif;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.mapa-serv p{
-    font-size: 18px;
-    letter-spacing: 5px;
-}
 
-.imagen2{
-    grid-area: imagen2;
-    background-color: rgb(240, 249, 253);
-}
 
-.suite{
+.servicios-suite {
     grid-area: suite;
     background-color: rgb(240, 249, 253);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    padding-left: 20px;
-  
 }
 
-
-.ma-suite{
+.servicios-ma-suite {
     grid-area: ma-suite;
     background-color: rgb(240, 249, 253);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    padding-left: 20px;
 }
 
-.j-suite{
+.servicios-j-suite {
     grid-area: j-suite;
     background-color: rgb(240, 249, 253);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    padding-left: 20px; 
 }
 
-.m-suite{
+.servicios-m-suite {
     grid-area: m-suite;
     background-color: rgb(240, 249, 253);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    padding-left: 20px;
 }
 
-.hogar{
+.suite {
+    background-color: white;
+    box-shadow: 5px 5px 10px grey;
+    border: 1px solid;
+    display: flex;
+}
+
+
+
+.gris {
+    color: grey;
+    display: flex;
+    justify-content: last baseline;
+    align-items: baseline;
+    font-size: 18px;
+}
+
+
+.servicios-hogar {
     grid-area: hogar;
     background-color: rgb(240, 249, 253);
+}
+
+.hogar {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    border-radius: 200px;
-
+    background-color: white;
+    border: 1px solid #D0D0D0;
+    text-align: center;
 }
 
-.hogar p{
-    line-height: 0px;
+.hogar h1 {
+    font-size: 20px;
+    padding-left: 0rem;
+    letter-spacing: 0rem;
 }
 
-.entrega {
+.servicios-entrega {
     grid-area: entrega;
     background-color: rgb(240, 249, 253);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 20px;
-    border-radius: 200px;
 }
 
-.entrega p{
-    line-height: 0px;
-}
-
-.seguro-vet{
-    grid-area: seguro-vet;
+.servicios-seguro {
+    grid-area: seguro;
     background-color: rgb(240, 249, 253);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 20px;
-    border-radius: 200px;
 }
 
-.seguro-vet p{
-    line-height: 0px;
-}
-
-.peluqueria{
+.servicios-peluqueria {
     grid-area: peluqueria;
     background-color: rgb(240, 249, 253);
+}
+
+.servicios-mapa {
+    grid-area: mapa;
+    background-color: rgb(240, 249, 253);
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 10px;
-    border-radius: 200px;
 }
 
-.peluqueria p{
-    line-height: 0px;
+.servicios-imagen {
+    grid-area: imagen;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 
-
-
-
-.container-habitaciones {
+.habitaciones {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 220px 280px 60px 300px 60px 300px; 
-    height: 172vh; 
-    grid-gap: 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
     grid-template-areas: 
-            "frase frase frase frase"
-            "descripcion1 descripcion1 imagen3 imagen3"
-            "habitaciones habitaciones habitaciones habitaciones"
-            "zen-suite white-vibes rainy-day happy-day"
-            "actividades actividades actividades actividades"
-            "h-piscina h-montana h-lago h-recreo"; 
-
+    "frase frase frase frase"
+    "descripcion descripcion descripcion imagen"
+    "zen-suite zen-suite white-vibes white-vibes"
+    "happy-day happy-day rainy-day rainy-day"
+    "actividades actividades actividades actividades"
+    "piscina piscina montana montana"
+    "lago lago recreo recreo";
 }
 
-.frase{
+.habitaciones-frase {
     grid-area: frase;
     background-color: rgb(240, 249, 253);
-}
-
-.frase p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 26px;
-    padding-top: 60px;
-    line-height: 50px;
-
+    
 }
 
-.descripcion1{
-    grid-area: descripcion1;
+.habitaciones-frase h1 {
+    font-size: 22px;
+    letter-spacing: 0rem;
+   
+}
+
+.habitaciones-descripcion {
+    grid-area: descripcion;
     background-color: rgb(240, 249, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
 }
 
-.descripcion1 h2{
-    font-size: 26px;
-    padding-top: 30px;
-    line-height: 60px;
-    padding-left: 30px;
-    letter-spacing: 8px;
-}
-
-.imagen3{
-    grid-area: imagen3;
+.habitaciones-imagen {
+    grid-area: imagen;
     background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.habitaciones{
-    grid-area: habitaciones;
-    background-color: rgb(240, 249, 253);
-}
-
-.habitaciones h2{
-    font-size: 26px;
-    line-height: 60px;
-    padding-left: 30px;
-    letter-spacing: 10px;
-    text-align: center;
-    font-style: oblique;
-}
-
-.zen-suite{
+.habitaciones-zen {
     grid-area: zen-suite;
     background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 10px;
+    
 }
 
-.white-vibes{
+.habitaciones-white {
     grid-area: white-vibes;
     background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 15px;
+    
 }
 
-.rainy-day{
+.habitaciones-rainy {
     grid-area: rainy-day;
     background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 25px;
+    
 }
 
-.happy-day{
+.habitaciones-happy {
     grid-area: happy-day;
     background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 30px;
+    
 }
 
-.actividades{
+.habitaciones-card {
+    background-color: white;
+    box-shadow: 5px 5px 10px grey;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+}
+
+
+.precio {
+    color: grey;
+    display: flex;
+    justify-content: last baseline;
+    align-items: baseline;
+    font-size: 18px;
+}
+
+
+.habitaciones-titulo {
     grid-area: actividades;
-    background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    
 }
 
-.actividades h2{
-    font-size: 26px;
-    padding-left: 30px;
-    letter-spacing: 10px;
-    text-align: center;
-    font-style: oblique;
-}
-
-.h-piscina{
-    grid-area: h-piscina;
-    background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 20px;
-}
-
-.h-montana{
-    grid-area: h-montana;
-    background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 50px;
-}
-
-.h-lago{
-    grid-area: h-lago;
-    background-color: rgb(240, 249, 253);                                       text-align: center;
-    padding-top: 35px;
-}
-
-.h-recreo{
-    grid-area: h-recreo;
-    background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 45px;
-}
-
-
-
-
-
-
-.container-galeria {
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: 50px 300px 50px 300px 50px 300px 50px 300px; 
-    height: 197vh; 
-    grid-gap: 2px;
-    grid-template-areas: 
-            "hotel-title"
-            "hotel"
-            "recreo-title"
-            "recreo"
-            "piscina-title"
-            "piscina"
-            "montana-title" 
-            "montana" ; 
-
-}
-
-.hotel-title{
-    grid-area: hotel-title;
-    background-color: rgb(240, 249, 253);
-
-}
-
-.hotel{
-    grid-area: hotel;
-    background-color: rgb(240, 249, 253);
-
-}
-
-.medida-car{
-    height: 270px;
-    width: auto;
-}
-
-.recreo-title{
-    grid-area: recreo-title;
-    background-color: rgb(240, 249, 253);
-
-}
-
-.recreo{
-    grid-area: recreo;
-    background-color: rgb(240, 249, 253);
-
-}
-
-.piscina-title{
-    grid-area: piscina-title;
-    background-color: rgb(240, 249, 253);
-
-}
-
-.piscina{
+.habitaciones-piscina {
     grid-area: piscina;
     background-color: rgb(240, 249, 253);
-
+    
 }
 
-.montana-title{
-    grid-area: montana-title;
-    background-color: rgb(240, 249, 253);
-
-}
-
-.montana{
+.habitaciones-montana {
     grid-area: montana;
     background-color: rgb(240, 249, 253);
-
+    
 }
 
-.medida-car{
-    height: 270px;
-    width: auto;
-}
-
-
-.container-contacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 300px 300px 300px 300px; 
-    height: 168vh; 
-    grid-gap: 2px;
-    grid-template-areas: 
-            "imagen4 imagen4 imagen4 imagen4"
-            "nosotros nosotros nosotros nosotros"
-            "contactos contactos imagen5 imagen5"
-            "mapa-contacto mapa-contacto direccion form-contacto" ; 
-
-}
-
-.imagen4{
-    grid-area: imagen4;
+.habitaciones-lago {
+    grid-area: lago;
     background-color: rgb(240, 249, 253);
-    text-align: center;
-    padding-top: 40px;
+    
+}
+
+.habitaciones-recreo {
+    grid-area: recreo;
+    background-color: rgb(240, 249, 253);
+    
+}
+
+.actividades-card {
+    background-color: white;
+    border: 1px solid #D0D0D0;
+    display: flex;
+    justify-content: center;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+    "hotel-title"
+    "hotel"
+    "recreo-title"
+    "recreo"
+    "piscina-title"
+    "piscina"
+    "montana-title"
+    "montana";
+}
+
+.galeria-hotel-title {
+    grid-area: hotel-title;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
 }
 
-.nosotros{
+.galeria-hotel {
+    grid-area: hotel;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.galeria-recreo-title {
+    grid-area: recreo-title;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.galeria-recreo {
+    grid-area: recreo;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.galeria-piscina-title {
+    grid-area: piscina-title;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.galeria-piscina {
+    grid-area: piscina;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.galeria-montana-title {
+    grid-area: montana-title;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.galeria-montana {
+    grid-area: montana;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.medida {
+    width: 40rem;
+}
+
+
+
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+    "gif-casa gif-casa gif-casa gif-casa"
+    "nosotros nosotros nosotros nosotros"
+    "contactos contactos contactos imagen"
+    "mapa mapa direccion formulario";
+}
+
+.contacto-gif {
+    grid-area: gif-casa;
+    background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contacto-nosotros {
     grid-area: nosotros;
     background-color: rgb(240, 249, 253);
 
 }
 
-.nosotros h2{
-    font-size: 26px;
-    padding-left: 30px;
-    letter-spacing: 10px;
-    font-style: oblique;
-    padding-top: 20px;
-    line-height: 60px;
-
-}
-
-.contactos{
+.contacto-contactos {
     grid-area: contactos;
     background-color: rgb(240, 249, 253);
-   
 
 }
 
-.contactos h2{
-    padding-left: 50px;
-    font-size: 26px;
-    letter-spacing: 10px;
-    font-style: oblique;
-    padding-top: 30px;
-    line-height: 60px;
+.contacto-contactos ul{
+   list-style: none;
+   line-height: 60px;
+
 }
 
-.contactos ul{
-    padding-top: 10px;
-    list-style: none;
-    padding-left: 0rem;
+.contacto-orden {
     display: flex;
     justify-content: space-evenly;
-    line-height: 50px;
+    align-items: center;
 
 }
 
-.imagen5{
-    grid-area: imagen5;
+.contacto-imagen {
+    grid-area: imagen;
     background-color: rgb(240, 249, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.mapa-contacto{
-    grid-area: mapa-contacto;
+.contacto-mapa {
+    grid-area: mapa;
     background-color: rgb(240, 249, 253);
     display: flex;
     justify-content: space-around;
@@ -559,74 +525,72 @@ body {
 
 }
 
-.mapa-contacto h2{
-    font-size: 26px;
-    padding-left: 30px;
-    letter-spacing: 10px;
-    font-style: oblique;
-    padding-top: 20px;
-    line-height: 60px;
-}
-
-.direccion{
+.contacto-direccion {
     grid-area: direccion;
     background-color: rgb(240, 249, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding-top: 50px;
+    align-items: center;
+
 }
 
-.form-contacto{
-    grid-area: form-contacto;
+.contacto-formulario {
+    grid-area: formulario;
     background-color: rgb(240, 249, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(240, 249, 253);
+   
+
+}
+
+.footer-contacto{
+   
+    display: flex;
+   
+    padding-top: 30px;
+
+}
+
+.footer-contenido{
+  
     display: flex;
     justify-content: center;
     padding-top: 30px;
-}
-
-
-
-.container-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 220px ; 
-    height: 33vh; 
-    grid-gap: 2px;
-    background-color: rgb(240, 249, 253);
-    grid-template-areas: 
-            "inf-contact contenido logo" ; 
 
 }
 
-.inf-contact{
-    grid-area: inf-contact;
-    background-color: rgb(240, 249, 253);
-    display:flex;
-    justify-content: space-evenly;
-    padding-top: 30px;
+.footer-contenido h1{
+   padding: 0;
 
 }
 
-.contenido{
-    grid-area: contenido;
-    background-color: rgb(240, 249, 253);
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-
-}
-
-
-.contenido h1{
-    font-size: 20px;
-}
-
-.contenido ul{
+.footer-contenido ul{
+    text-align: center;
     list-style: none;
 }
 
 .logo{
-    grid-area: logo;
-    background-color: rgb(240, 249, 253);
+   
     text-align: center;
     padding-top: 20px;
 
@@ -634,4 +598,81 @@ body {
 
 
 
+@media screen and (max-width: 950px) {
 
+    
+    .index {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        "baner"
+        "presentacion"
+        "descripcion"
+        "unicos"
+        "imagen";
+        }
+
+        .servicios {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto;
+            grid-template-areas: 
+            "gif gif"
+            "suite suite"
+            "ma-suite ma-suite"
+            "j-suite j-suite"
+            "m-suite m-suite"
+            "hogar entrega"
+            "seguro peluqueria" 
+            "mapa mapa" 
+            "imagen imagen";
+        }
+
+       
+
+        .galeria {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto auto auto auto auto;
+            grid-template-areas: 
+            "hotel-title"
+            "hotel"
+            "recreo-title"
+            "recreo"
+            "piscina-title"
+            "piscina"
+            "montana-title"
+            "montana";
+        }
+
+        .medida {
+            width: 25rem;
+        }
+
+        .contacto {
+
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto auto auto auto;
+            grid-template-areas: 
+            "gif-casa"
+            "nosotros"
+            "contactos"
+            "imagen"
+            "mapa" 
+            "direccion"
+            "formulario";
+        }
+        
+
+}
+
+
+@media screen and (max-width: 1320px) {
+   
+    .barra-item1{
+        padding-left: 0em;
+    }
+
+    .barra-item{
+        padding-left: 1.5em;
+    }
+
+}
