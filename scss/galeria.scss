@@ -22,6 +22,11 @@
     "montana-title"
     "g-montana";
 
+    img {
+        height: 400px;
+        width: 50px;
+    }
+
     &__title1 {
         grid-area: hotel-title;
         grid-row: 1;

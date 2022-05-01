@@ -3,7 +3,22 @@
 @import "fix";
 
 
+@keyframes contacto {
+    0% {  
+        top: 0px;
+        left: 0px;
+    }
 
+    50% {  
+        top: 2rem;
+        left: 3rem;
+    }
+
+    100% {  
+        top: 4rem;
+        left: 5rem;
+}
+}
 
 .contacto {
     display: grid;
@@ -14,19 +29,18 @@
     grid-template-areas: 
     "gif-casa gif-casa gif-casa gif-casa"
     "nosotros nosotros nosotros nosotros"
-    "contactos contactos contactos c-imagen"
-    "c-mapa c-mapa direccion formulario";
+    "contactos contactos c-imagen c-imagen"
+    "c-mapa c-mapa formulario formulario";
 
     @media screen and (max-width: 950px) {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
         grid-template-areas: 
         "gif-casa"
         "nosotros"
         "contactos"
         "c-imagen"
         "c-mapa" 
-        "direccion"
         "formulario";
     }
 
@@ -65,20 +79,38 @@
     &__contactos {
         grid-area: contactos;
         grid-row: 4;
-        grid-column: 1 2 3;
+        grid-column: 1 2;
         background-color: $color-fondo;
+       
+      img {
+          height: 10%;
+          width: 10%;
+      }  
+       
 
         .orden {
             @include flex(space-evenly, center);
+            align-items: center;
+           
 
+            .columna {
+                display: flex;
+                flex-direction: column;
+            }
         }
+      
 
-        ul{
-            list-style: none;
-            line-height: 60px;
-         
-         }
+        a {
+            margin-top: 2rem;
+            text-align: center;   
 
+            a:hover {
+                background-color: rgb (255, 255, 255, 0,5);
+            }
+        }
+      
+
+       
          @media screen and (max-width: 950px) {
             grid-row: 3;
             grid-column: 1;
@@ -91,7 +123,7 @@
     &__imagen {
         grid-area: c-imagen;
         grid-row: 4;
-        grid-column: 4;
+        grid-column: 3 4;
         background-color: $color-fondo;
         @extend %centrado;
          
@@ -115,36 +147,32 @@
         @media screen and (max-width: 950px) {
             grid-row: 5;
             grid-column: 1;
+            flex-direction: column;
         }
     
     }
     
-    &__direccion {
-        grid-area: direccion;        
-        grid-row: 5;
-        grid-column: 3;
-        background-color: $color-fondo;
-        @extend %centrado;
-        flex-direction: column;
-        
-        @media screen and (max-width: 950px) {
-            grid-row: 6;
-            grid-column: 1;
-        }
-
-        
-        
-    
-    }
     
     &__formulario {
         grid-area: formulario;
         grid-row: 5;
-        grid-column: 4;
+        grid-column: 3 4;
         background-color: $color-fondo;
         @extend %centrado;
         flex-direction: column;
+       
+        label {
+            display: block;
+        }
 
+
+        textarea:focus, input:focus{
+            border-color: rgb(72, 214, 245);
+            box-shadow: 0 1px 1px rgba(72, 214, 245, 0.075) inset, 0 0 8px rgba(72, 214, 245,0.6);
+            outline: 0 none;
+        }
+        
+        
 
         @media screen and (max-width: 950px) {
             grid-row: 7;

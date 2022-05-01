@@ -14,21 +14,23 @@
     "suite suite ma-suite ma-suite"
     "j-suite j-suite m-suite m-suite"
     "hogar entrega seguro peluqueria"
-    "s-mapa s-mapa s-mapa img";
+    "s-mapa s-mapa s-mapa s-imagen";
 
     @media screen and (max-width: 950px) {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
         grid-template-areas: 
-        "gif gif"
-        "suite suite"
-        "ma-suite ma-suite"
-        "j-suite j-suite"
-        "m-suite m-suite"
-        "hogar entrega"
-        "seguro peluqueria" 
-        "s-mapa s-mapa" 
-        "img img";
+        "gif"
+        "suite"
+        "ma-suite"
+        "j-suite"
+        "m-suite"
+        "hogar"
+        "entrega"
+        "seguro" 
+        "peluqueria"
+        "s-mapa" 
+        "s-imagen";
     }
 
     &__gif {
@@ -40,7 +42,7 @@
 
         @media screen and (max-width: 950px) {
             grid-row: 1;
-            grid-column: 1 2;
+            grid-column: 1;
         }
 
         
@@ -55,7 +57,7 @@
 
         @media screen and (max-width: 950px) {
             grid-row: 2;
-            grid-column: 1 2;
+            grid-column: 1;
         }
 
         
@@ -70,7 +72,7 @@
 
         @media screen and (max-width: 950px) {
             grid-row: 3;
-            grid-column: 1 2;
+            grid-column: 1;
         }
 
         
@@ -84,7 +86,7 @@
 
         @media screen and (max-width: 950px) {
             grid-row: 4;
-            grid-column: 1 2;
+            grid-column: 1;
         }
 
         
@@ -98,7 +100,7 @@
 
         @media screen and (max-width: 950px) {
             grid-row: 5;
-            grid-column: 1 2;
+            grid-column: 1;
         }
     }
 
@@ -108,18 +110,18 @@
         grid-column: 1;
         @extend %tarjeta;
 
+        h2{
+            font-size: 20px;
+            padding-left: 0rem;
+            letter-spacing: 0rem;
+            font-style: italic;
+            font-weight: 600;
+            line-height: 3rem;
+        }
+        
         @media screen and (max-width: 950px) {
             grid-row: 6;
             grid-column: 1;
-        }
-       
-        h2{
-            font-size: 20px;
-        padding-left: 0rem;
-        letter-spacing: 0rem;
-        font-style: italic;
-        font-weight: 600;
-        line-height: 3rem;
         }
         
     }
@@ -130,20 +132,19 @@
         grid-column: 2;
         @extend %tarjeta;
 
-        @media screen and (max-width: 950px) {
-            grid-row: 6;
-            grid-column: 2;
-        }
-
         h2{
             font-size: 20px;
-        padding-left: 0rem;
-        letter-spacing: 0rem;
-        font-style: italic;
-        font-weight: 600;
-        line-height: 3rem;
+            padding-left: 0rem;
+            letter-spacing: 0rem;
+            font-style: italic;
+            font-weight: 600;
+            line-height: 3rem;
         }
-        
+
+        @media screen and (max-width: 950px) {
+            grid-row: 7;
+            grid-column: 1;
+        } 
        
     }
     
@@ -153,18 +154,18 @@
         grid-column: 3;
         @extend %tarjeta;
 
-        @media screen and (max-width: 950px) {
-            grid-row: 7;
-            grid-column: 1;
-        }
-
         h2{
             font-size: 20px;
-        padding-left: 0rem;
-        letter-spacing: 0rem;
-        font-style: italic;
-        font-weight: 600;
-        line-height: 3rem;
+            padding-left: 0rem;
+            letter-spacing: 0rem;
+            font-style: italic;
+            font-weight: 600;
+            line-height: 3rem;
+        }
+        
+        @media screen and (max-width: 950px) {
+            grid-row: 8;
+            grid-column: 1;
         }
         
         
@@ -176,20 +177,19 @@
         grid-column: 4;
         @extend %tarjeta;
 
-        @media screen and (max-width: 950px) {
-            grid-row: 7;
-            grid-column: 2;
-        }
-
         h2{
             font-size: 20px;
-        padding-left: 0rem;
-        letter-spacing: 0rem;
-        font-style: italic;
-        font-weight: 600;
-        line-height: 3rem;
+            padding-left: 0rem;
+            letter-spacing: 0rem;
+            font-style: italic;
+            font-weight: 600;
+            line-height: 3rem;
         }
         
+        @media screen and (max-width: 950px) {
+            grid-row: 9;
+            grid-column: 1;
+        }
     }
     
     &__mapa {
@@ -200,20 +200,20 @@
         @include flex(space-evenly, center);
 
         @media screen and (max-width: 950px) {
-            grid-row: 8;
-            grid-column: 1 2;
+            grid-row: 10;
+            grid-column: 1;
         }
     }
     
     &__imagen {
-        grid-area: img;
+        grid-area: s-imagen;
         grid-row: 5;
         grid-column: 4;
         background-color: $color-fondo;
         @extend %centrado;
 
         @media screen and (max-width: 950px) {
-            grid-row: 9;
+            grid-row: 11;
             grid-column: 1;
         }
 

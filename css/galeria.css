@@ -180,6 +180,11 @@ body {
       grid-template-areas: "hotel-title" "hotel" "lago-title" "g-lago" "piscina-title" "g-piscina" "montana-title" "g-montana";
 }
 
+.galeria img {
+  height: 400px;
+  width: 50px;
+}
+
 .galeria__title1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;

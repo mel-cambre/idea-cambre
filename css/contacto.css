@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-.contacto__gif, .contacto__imagen, .contacto__direccion, .contacto__formulario {
+.contacto__gif, .contacto__imagen, .contacto__formulario {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,6 +168,36 @@ body {
   padding-top: 20px;
 }
 
+@-webkit-keyframes contacto {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  50% {
+    top: 2rem;
+    left: 3rem;
+  }
+  100% {
+    top: 4rem;
+    left: 5rem;
+  }
+}
+
+@keyframes contacto {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  50% {
+    top: 2rem;
+    left: 3rem;
+  }
+  100% {
+    top: 4rem;
+    left: 5rem;
+  }
+}
+
 .contacto {
   display: -ms-grid;
   display: grid;
@@ -177,16 +207,16 @@ body {
       grid-template-rows: auto auto auto auto;
   height: auto;
   grid-gap: 0.3rem;
-      grid-template-areas: "gif-casa gif-casa gif-casa gif-casa" "nosotros nosotros nosotros nosotros" "contactos contactos contactos c-imagen" "c-mapa c-mapa direccion formulario";
+      grid-template-areas: "gif-casa gif-casa gif-casa gif-casa" "nosotros nosotros nosotros nosotros" "contactos contactos c-imagen c-imagen" "c-mapa c-mapa formulario formulario";
 }
 
 @media screen and (max-width: 950px) {
   .contacto {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: auto auto auto auto auto auto auto;
-        grid-template-rows: auto auto auto auto auto auto auto;
-        grid-template-areas: "gif-casa" "nosotros" "contactos" "c-imagen" "c-mapa"  "direccion" "formulario";
+    -ms-grid-rows: auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "gif-casa" "nosotros" "contactos" "c-imagen" "c-mapa"  "formulario";
   }
 }
 
@@ -233,12 +263,17 @@ body {
 .contacto__contactos {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: contactos;
   -ms-grid-row: 4;
   grid-row: 4;
-  grid-column: 1 2 3;
+  grid-column: 1 2;
   background-color: #f0f9fd;
+}
+
+.contacto__contactos img {
+  height: 10%;
+  width: 10%;
 }
 
 .contacto__contactos .orden {
@@ -251,11 +286,26 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  align-items: center;
 }
 
-.contacto__contactos ul {
-  list-style: none;
-  line-height: 60px;
+.contacto__contactos .orden .columna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacto__contactos a {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contacto__contactos a a:hover {
+  background-color: rgb 255, 255, 255, 0, 5;
 }
 
 @media screen and (max-width: 950px) {
@@ -269,12 +319,12 @@ body {
 
 .contacto__imagen {
   -ms-grid-row: 3;
-  -ms-grid-column: 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-area: c-imagen;
   -ms-grid-row: 4;
   grid-row: 4;
-  -ms-grid-column: 4;
-  grid-column: 4;
+  grid-column: 3 4;
   background-color: #f0f9fd;
 }
 
@@ -312,46 +362,37 @@ body {
     grid-row: 5;
     -ms-grid-column: 1;
     grid-column: 1;
-  }
-}
-
-.contacto__direccion {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
-  grid-area: direccion;
-  -ms-grid-row: 5;
-  grid-row: 5;
-  -ms-grid-column: 3;
-  grid-column: 3;
-  background-color: #f0f9fd;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media screen and (max-width: 950px) {
-  .contacto__direccion {
-    -ms-grid-row: 6;
-    grid-row: 6;
-    -ms-grid-column: 1;
-    grid-column: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .contacto__formulario {
   -ms-grid-row: 4;
-  -ms-grid-column: 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-area: formulario;
   -ms-grid-row: 5;
   grid-row: 5;
-  -ms-grid-column: 4;
-  grid-column: 4;
+  grid-column: 3 4;
   background-color: #f0f9fd;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.contacto__formulario label {
+  display: block;
+}
+
+.contacto__formulario textarea:focus, .contacto__formulario input:focus {
+  border-color: #48d6f5;
+  -webkit-box-shadow: 0 1px 1px rgba(72, 214, 245, 0.075) inset, 0 0 8px rgba(72, 214, 245, 0.6);
+          box-shadow: 0 1px 1px rgba(72, 214, 245, 0.075) inset, 0 0 8px rgba(72, 214, 245, 0.6);
+  outline: 0 none;
 }
 
 @media screen and (max-width: 950px) {
