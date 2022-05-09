@@ -126,17 +126,46 @@ body {
   background-color: #d9f3ff;
 }
 
+.footer ul {
+  text-align: center;
+  list-style: none;
+}
+
 .footer__contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30px;
+  align-items: center;
+}
+
+.footer__contacto ul {
+  text-align: center;
+  list-style: none;
+}
+
+.footer__contacto ul li {
+  margin-top: 1rem;
+}
+
+.footer__contacto .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 5rem;
+}
+
+.footer__contacto img {
+  height: 10%;
+  width: 10%;
 }
 
 .footer__contenido {
@@ -228,7 +257,7 @@ body {
   -ms-grid-row: 1;
   grid-row: 1;
   grid-column: 1 2 3 4;
-  background-color: #f0f9fd;
+  background-color: #f7fbfc;
 }
 
 @media screen and (max-width: 950px) {
@@ -248,7 +277,7 @@ body {
   -ms-grid-row: 2;
   grid-row: 2;
   grid-column: 1 2 3 4;
-  background-color: #f0f9fd;
+  background-color: #f7fbfc;
 }
 
 @media screen and (max-width: 950px) {
@@ -268,12 +297,12 @@ body {
   -ms-grid-row: 4;
   grid-row: 4;
   grid-column: 1 2;
-  background-color: #f0f9fd;
+  background-color: #f7fbfc;
 }
 
 .contacto__contactos img {
   height: 10%;
-  width: 10%;
+  width: 20%;
 }
 
 .contacto__contactos .orden {
@@ -325,7 +354,7 @@ body {
   -ms-grid-row: 4;
   grid-row: 4;
   grid-column: 3 4;
-  background-color: #f0f9fd;
+  background-color: #f7fbfc;
 }
 
 @media screen and (max-width: 950px) {
@@ -345,7 +374,7 @@ body {
   -ms-grid-row: 5;
   grid-row: 5;
   grid-column: 1 2;
-  background-color: #f0f9fd;
+  background-color: #f7fbfc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,7 +406,7 @@ body {
   -ms-grid-row: 5;
   grid-row: 5;
   grid-column: 3 4;
-  background-color: #f0f9fd;
+  background-color: #f7fbfc;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

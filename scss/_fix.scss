@@ -114,12 +114,35 @@ body {
     flex-wrap: wrap;
     background-color: rgb(217, 243, 255);
    
+    ul {
+        text-align: center;
+        list-style: none;
+    }
+
     &__contacto {   
-        display: flex; 
-        justify-content: center;
+        @include flex(space-around, center);
         align-items: center;
-        padding-top: 30px;
+
+        ul {
+            text-align: center;
+            list-style: none;
     
+            li {
+                margin-top: 1rem;
+            }
+        }
+
+        .redes {
+            display: flex;
+            flex-direction: column;
+            margin-left: 5rem;
+            
+        }
+    
+        img {
+            height: 10%;
+            width: 10%;
+        }  
     }
 
     &__contenido{
@@ -136,6 +159,7 @@ body {
             text-align: center;
             list-style: none;
         }
+    
 
         a {
             font-size: 18px;

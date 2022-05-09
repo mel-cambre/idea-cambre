@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Roboto", Helvetica, sans-serif;
+    color: black;
+    line-height: 27px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #99713C;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+a:visited {
+    color: #99713C;
+}
+
+a:hover {
+    color: #76572d;
+    background-color: rgba(198, 184, 170, 0.4);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+input:focus {
+    background-color: #F2F2F2;
+}
+
+
+
+h2 {
+    line-height: 50px;
+    margin-left: 20px;
+
+}
+
+p {
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+b {
+    font-size: 18px;
+}
+
+.container-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 150px; 
+    grid-template-areas: 
+             "introduccion barra barra";   
+}
+
+.header ul {
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.introduccion{
+    background-color: #E6F4FC;
+    grid-area: introduccion;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    
+}
+
+.barra{
+    background-color: #E6F4FC;
+    grid-area: barra;
+}
+
+
+
+.container {
+    display: grid;
+    grid-auto-rows: 300 px;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 265px 200px 250px; 
+    height: 102vh; 
+    grid-gap: 2px; 
+    grid-template-areas: 
+            "baner baner"
+            "a b"
+            "a c" ;                                                                 
+}
+
+
+.inicio {
+    background-color: rgb(240, 249, 253);
+    grid-area: baner;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+       
+}
+
+.bienvenida {
+    background-color: rgb(240, 249, 253);
+    grid-area: a;
+       
+}
+
+.bienvenida h2 {
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.descripcion {
+    background-color: rgb(240, 249, 253);
+    grid-area: b;
+           
+}
+
+.descripcion h2 {
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+.imagen {
+    background-color: rgb(240, 249, 253);
+    grid-area: c;
+           
+}
+
+
+
+.container-servicios {
+    display: grid;
+    grid-auto-rows: 100 px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 200px 300px 325px 330px ; 
+    height: 165vh; 
+    grid-gap: 2px; 
+    grid-template-areas: 
+            "foto foto foto foto"
+            "mapa mapa perrito perrito"
+            "suite j-suite m-suite ma-suite"
+            "hogar entrega seguro pelu" ;   
+}
+
+.banner {
+    background-color: rgb(240, 249, 253);
+    grid-area: foto;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+    
+}
+
+.mapa {
+    background-color: rgb(240, 249, 253);
+    grid-area: mapa;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 3px;
+
+    
+}
+
+.perrito {
+    background-color: rgb(240, 249, 253);
+    grid-area: perrito;
+    display: flex;
+    
+}
+
+.suite {
+    background-color: rgb(240, 249, 253);
+    grid-area: suite;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.jsuite {
+    background-color: rgb(240, 249, 253);
+    grid-area: j-suite;
+    text-align: center;
+    padding-top: 10px;
+
+    
+}
+
+.msuite {
+    background-color: rgb(240, 249, 253);
+    grid-area: m-suite;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.masuite {
+    background-color: rgb(240, 249, 253);
+    grid-area: ma-suite;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.hogar {
+    background-color: rgb(240, 249, 253);
+    border-radius: 100%;
+    grid-area: hogar;
+    text-align: center;
+    padding-top: 10px;
+ 
+
+}
+
+.entrega {
+    background-color: rgb(240, 249, 253);
+    border-radius: 100%;
+    grid-area: entrega;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.veterinario{
+    background-color: rgb(240, 249, 253);
+    border-radius: 100%;
+    grid-area: seguro;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+.pelu{
+    background-color: rgb(240, 249, 253);
+    border-radius: 100%;
+    grid-area: pelu;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+
+.container-habitaciones {
+    display: grid;
+    grid-auto-rows: 100 px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 180px 200px 50px 350px 50px 350px ; 
+    height: 170vh; 
+    grid-gap: 2px; 
+    grid-template-areas: 
+            "frase frase frase frase"
+            "hotel hotel image image"
+            "habitaciones habitaciones habitaciones habitaciones"
+            "hab1 hab2 hab3 hab4"
+            "actividades actividades actividades actividades"
+            "act1 act2 act3 act4" ;   
+}
+
+.frase{
+    background-color: rgb(240, 249, 253);
+    grid-area: frase;
+    text-align: center;
+    padding-top: 40px;
+    line-height: 40px;
+    font-style: oblique;
+    font-size: 14px;
+}
+
+.hotel{
+    background-color: rgb(240, 249, 253);
+    grid-area: hotel;
+    
+}
+
+.hotel h2 {
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.image{
+    background-color: rgb(240, 249, 253);
+    grid-area: image;
+    
+}
+
+.habitaciones {
+    background-color: rgb(240, 249, 253);
+    grid-area: habitaciones;
+    
+}
+
+.habitaciones h2 {
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+   
+}
+
+.hab1{
+    background-color: rgb(240, 249, 253);
+    grid-area: hab1;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.hab2{
+    background-color: rgb(240, 249, 253);
+    grid-area: hab2;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.hab3{
+    background-color: rgb(240, 249, 253);
+    grid-area: hab3;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.hab4{
+    background-color: rgb(240, 249, 253);
+    grid-area: hab4;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.actividades{
+    background-color: rgb(240, 249, 253);
+    grid-area: actividades;
+    
+}
+
+.actividades h2 {
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.act1{
+    background-color: rgb(240, 249, 253);
+    grid-area: act1;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.act2{
+    background-color: rgb(240, 249, 253);
+    grid-area: act2;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.act3{
+    background-color: rgb(240, 249, 253);
+    grid-area: act3;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.act4{
+    background-color: rgb(240, 249, 253);
+    grid-area: act4;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+.container-galeria {
+    display: grid;
+    grid-auto-rows: 250px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 50px 250px 50px 250px 50px 250px 50px 250px; 
+    height: 176vh; 
+    grid-gap: 5px; 
+    grid-template-areas:
+            "hotelperros hotelperros hotelperros hotelperros" 
+            "hotel1 hotel2 hotel3 hotel4" 
+            "recreo recreo recreo recreo" 
+            "recreo1 recreo2 recreo3 recreo4"
+            "piscina piscina piscina piscina" 
+            "piscina1 piscina2 piscina3 piscina4"
+            "montana montana montana montana" 
+            "montana1 montana2 montana3 montana4"
+             ;   
+}
+
+.hotelperros {
+    background-color: rgb(240, 249, 253);
+    grid-area: hotelperros;
+    
+}
+.hotelperros h2 {
+    letter-spacing: 2px;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.hotel1 {
+    background-color: rgb(240, 249, 253);
+    grid-area: hotel1;
+    padding-top: 20px;
+    padding-left: 30px;
+    
+}
+
+.hotel2 {
+    background-color: rgb(240, 249, 253);
+    grid-area: hotel2;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+
+.hotel3 {
+    background-color: rgb(240, 249, 253);
+    grid-area: hotel3;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+.hotel4 {
+    background-color: rgb(240, 249, 253);
+    grid-area: hotel4;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+.recreo {
+    background-color: rgb(240, 249, 253);
+    grid-area: recreo;
+    
+    
+}
+
+.recreo h2 {
+    letter-spacing: 2px;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.recreo1 {
+    background-color: rgb(240, 249, 253);
+    grid-area: recreo1;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+.recreo2 {
+    background-color: rgb(240, 249, 253);
+    grid-area: recreo2;
+    padding-top: 20px;
+    padding-left: 110px;
+    
+}
+
+.recreo3 {
+    background-color: rgb(240, 249, 253);
+    grid-area: recreo3;
+    padding-top: 20px;
+    padding-left: 70px;
+    
+}
+
+.recreo4 {
+    background-color: rgb(240, 249, 253);
+    grid-area: recreo4;
+    padding-top: 20px;
+    padding-left: 60px;
+    
+}
+
+.piscina {
+    background-color: rgb(240, 249, 253);
+    grid-area: piscina;
+    
+}
+
+.piscina h2 {
+    letter-spacing: 2px;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.piscina1 {
+    background-color: rgb(240, 249, 253);
+    grid-area: piscina1;
+    padding-top: 20px;
+    padding-left: 60px;
+    
+}
+
+.piscina2 {
+    background-color: rgb(240, 249, 253);
+    grid-area: piscina2;
+    padding-top: 20px;
+    padding-left: 60px;
+    
+}
+
+.piscina3 {
+    background-color: rgb(240, 249, 253);
+    grid-area: piscina3;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+.piscina4 {
+    background-color: rgb(240, 249, 253);
+    grid-area: piscina4;
+    padding-top: 20px;
+    padding-left: 60px;
+    
+}
+
+.montana {
+    background-color: rgb(240, 249, 253);
+    grid-area: montana;
+    
+}
+
+.montana h2 {
+    letter-spacing: 2px;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.montana1 {
+    background-color: rgb(240, 249, 253);
+    grid-area: montana1;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+
+.montana2 {
+    background-color: rgb(240, 249, 253);
+    grid-area: montana2;
+    padding-top: 20px;
+    padding-left: 60px;
+    
+}
+
+.montana3 {
+    background-color: rgb(240, 249, 253);
+    grid-area: montana3;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+.montana4 {
+    background-color: rgb(240, 249, 253);
+    grid-area: montana4;
+    padding-top: 20px;
+    padding-left: 110px;
+    
+}
+
+
+.container-contacto {
+    display: grid;
+    grid-auto-rows: 100 px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 200px 250px 200px 260px; 
+    height: 132vh; 
+    grid-gap: 5px; 
+    grid-template-areas:
+            "gif gif gif gif" 
+            "nosotros nosotros nosotros nosotros"
+            "contacta contacta imagen2 imagen2"
+            "mapacon mapacon direccion form-contacto"
+             ;   
+}
+
+.gif {
+    background-color: rgb(240, 249, 253);
+    grid-area: gif;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+
+.nosotros {
+    background-color: rgb(240, 249, 253);
+    grid-area: nosotros;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+
+.nosotros h2 {
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.contacta {
+    background-color: rgb(240, 249, 253);
+    grid-area: contacta;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.contacta ul {
+    list-style: none;
+}
+
+
+.contacta h2 {
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+.imagen2 {
+    background-color: rgb(240, 249, 253);
+    grid-area: imagen2;
+    
+}
+
+.mapacon {
+    background-color: rgb(240, 249, 253);
+    grid-area: mapacon;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.mapacon h2 {
+    letter-spacing: 5px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+
+.direccion {
+    background-color: rgb(240, 249, 253);
+    grid-area: direccion;
+    text-align: center;
+    padding-top: 40px;
+    line-height: 25px;
+    
+}
+
+.form-contacto {
+    background-color: rgb(240, 249, 253);
+    grid-area: form-contacto;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;    
+}
+
+
+
+.container-footer {
+    display: grid;
+    grid-auto-rows: 300 px;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 180px; 
+    height: 25vh; 
+    grid-gap: 2px; 
+    grid-template-areas: 
+            "contacto colaborar logo"
+            ; 
+                                                               
+
+}
+
+
+
+.contacto {
+    background-color: #E6F4FC;  
+    grid-area: contacto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: px;
+    text-align: center;
+    padding-top: 40px;
+    line-height: 11px;
+}
+
+
+
+.colaborador{
+    background-color: #E6F4FC;
+    grid-area: colaborar;
+    display:flex;
+    justify-content: space-around;
+    padding-top: 50px;
+
+}
+
+.logo{
+    background-color: #E6F4FC;   
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+

@@ -126,17 +126,46 @@ body {
   background-color: #d9f3ff;
 }
 
+.footer ul {
+  text-align: center;
+  list-style: none;
+}
+
 .footer__contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30px;
+  align-items: center;
+}
+
+.footer__contacto ul {
+  text-align: center;
+  list-style: none;
+}
+
+.footer__contacto ul li {
+  margin-top: 1rem;
+}
+
+.footer__contacto .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 5rem;
+}
+
+.footer__contacto img {
+  height: 10%;
+  width: 10%;
 }
 
 .footer__contenido {
@@ -193,7 +222,7 @@ body {
   grid-row: 1;
   -ms-grid-column: 1;
   grid-column: 1;
-  background-color: #f0f9fd;
+  background-color: #f7fbfc;
 }
 
 .galeria__hotel {
@@ -204,7 +233,7 @@ body {
   grid-row: 2;
   -ms-grid-column: 1;
   grid-column: 1;
-  background-color: #f0f9fd;
+  background-color: #f7fbfc;
 }
 
 .galeria__title2 {
@@ -215,7 +244,7 @@ body {
   grid-row: 3;
   -ms-grid-column: 1;
   grid-column: 1;
-  background-color: #f0f9fd;
+  background-color: #f7fbfc;
 }
 
 .galeria__lago {
@@ -226,7 +255,7 @@ body {
   grid-row: 4;
   -ms-grid-column: 1;
   grid-column: 1;
-  background-color: #f0f9fd;
+  background-color: #f7fbfc;
 }
 
 .galeria__title3 {
@@ -237,7 +266,7 @@ body {
   grid-row: 5;
   -ms-grid-column: 1;
   grid-column: 1;
-  background-color: #f0f9fd;
+  background-color: #f7fbfc;
 }
 
 .galeria__piscina {
@@ -248,7 +277,7 @@ body {
   grid-row: 6;
   -ms-grid-column: 1;
   grid-column: 1;
-  background-color: #f0f9fd;
+  background-color: #f7fbfc;
 }
 
 .galeria__title4 {
@@ -259,7 +288,7 @@ body {
   grid-row: 7;
   -ms-grid-column: 1;
   grid-column: 1;
-  background-color: #f0f9fd;
+  background-color: #f7fbfc;
 }
 
 .galeria__montana {
@@ -270,6 +299,6 @@ body {
   grid-row: 8;
   -ms-grid-column: 1;
   grid-column: 1;
-  background-color: #f0f9fd;
+  background-color: #f7fbfc;
 }
 /*# sourceMappingURL=galeria.css.map */
