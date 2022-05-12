@@ -1,0 +1,98 @@
+
+@import "./variable";
+@import "./fix";
+
+.index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    height: auto;
+    grid-gap: 0.3rem;
+    grid-template-areas: 
+    "baner baner"
+    "presentacion i-descripcion"
+    "unicos i-imagen";
+
+    @media screen and (max-width: 950px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        "baner"
+        "presentacion"
+        "i-descripcion"
+        "unicos"
+        "i-imagen";
+        
+    }
+    
+    &__baner {
+        grid-area: baner;
+        grid-row: 1;
+        grid-column: 1 2;
+        background-color: $color-fondo;
+        @extend %centrado;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        
+
+    }
+
+    &__presentacion {
+        grid-area: presentacion;
+        grid-row: 2;
+        grid-column: 1;
+        background-color: $color-fondo;
+        padding-top: 1rem;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 2;
+            grid-column: 1;
+        }
+    
+    
+    }
+
+    &__descripcion {
+        grid-area: i-descripcion;
+        grid-row: 2;
+        grid-column: 2;
+        background-color: $color-fondo;
+        padding-top: 1rem;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 3;
+            grid-column: 1;
+        }
+    
+    }
+
+    &__imagen {
+        grid-area: i-imagen;
+        grid-row: 3;
+        grid-column: 2;
+        background-color: $color-fondo;
+        @extend %centrado;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 4;
+            grid-column: 1;
+        }
+    }
+
+    &__unicos {
+        grid-area: unicos;
+        grid-row: 3;
+        grid-column: 1;
+        background-color: $color-fondo;
+        padding-top: 1rem;
+
+        @media screen and (max-width: 950px) {
+            grid-row: 5;
+            grid-column: 1;
+        }
+    }
+}

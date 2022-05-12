@@ -16,8 +16,14 @@
     "url": "https://github.com/mel-cambre/idea-cambre/issues"
   },
   "homepage": "https://github.com/mel-cambre/idea-cambre#readme",
+<<<<<<< HEAD
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
+=======
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+>>>>>>> master
   }
 }

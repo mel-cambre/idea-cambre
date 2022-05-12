@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
+<<<<<<< HEAD
     margin: 1rem;
+=======
+    margin: 0;
+>>>>>>> master
     padding: 0;
     box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
+<<<<<<< HEAD
     color: mapa-get ($fijos, link);
     font-weight: bold;
+=======
+    color: map-get($nav, color-uno);
+    font-weight: 800;
+    font-size: 26px;
+>>>>>>> master
 
     &:hover{
         color: #aea187;
@@ -29,12 +39,22 @@ h1 {
     line-height: 3rem;
 }
 
+<<<<<<< HEAD
 h4 {
     color: mapa-get ($fijos, color);
     display: flex;
     justify-content:flex-start;
     padding-left: 1rem;
     font-size: 18px;
+=======
+h2 {
+    color: map-get($nav, color-dos);
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+>>>>>>> master
 }
 
 h5 {
@@ -58,13 +78,21 @@ body {
 .nav-enlace {
     
     a {
+<<<<<<< HEAD
     color: #897248;
+=======
+    color: map-get($nav, color-uno);
+>>>>>>> master
     font-weight: bold;
     }
 }
 
 .fondo-nav {
+<<<<<<< HEAD
     background-color: $color-fondo;
+=======
+    background-color: rgb(217, 243, 255);
+>>>>>>> master
 }
 
 .barra-nav {
@@ -74,7 +102,12 @@ body {
 }
 
 .medida {
+<<<<<<< HEAD
     width: 40rem;
+=======
+    width: 50rem;
+    height: 30rem;   
+>>>>>>> master
 
     @media screen and (max-width: 950px) {
 
@@ -85,28 +118,82 @@ body {
 
 
 .barra-item {
+<<<<<<< HEAD
     padding-left: 6em;
 
     @media screen and (max-width: 1320px) {
 
        padding-left: 1.5em;
+=======
+    padding-left: 5rem;
+
+    @media screen and (max-width: 1320px) {
+
+       padding-left: 3rem;
+>>>>>>> master
     
     }
 }
 
+<<<<<<< HEAD
 
+=======
+.barra-item1 {
+    padding-left: 4rem;
+
+    @media screen and (max-width: 1320px) {
+
+       padding-left: 3rem;
+    
+    }
+}
+>>>>>>> master
 
 
 .footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+<<<<<<< HEAD
     background-color: rgb(240, 249, 253);
    
     &__contacto {   
         display: flex; 
         padding-top: 30px;
     
+=======
+    background-color: rgb(217, 243, 255);
+   
+    ul {
+        text-align: center;
+        list-style: none;
+    }
+
+    &__contacto {   
+        @include flex(space-around, center);
+        align-items: center;
+
+        ul {
+            text-align: center;
+            list-style: none;
+    
+            li {
+                margin-top: 1rem;
+            }
+        }
+
+        .redes {
+            display: flex;
+            flex-direction: column;
+            margin-left: 5rem;
+            
+        }
+    
+        img {
+            height: 10%;
+            width: 10%;
+        }  
+>>>>>>> master
     }
 
     &__contenido{
@@ -124,6 +211,15 @@ body {
             list-style: none;
         }
     
+<<<<<<< HEAD
+=======
+
+        a {
+            font-size: 18px;
+            color: #6e5c3c;
+        }
+    
+>>>>>>> master
     }
 
     &__logo {
